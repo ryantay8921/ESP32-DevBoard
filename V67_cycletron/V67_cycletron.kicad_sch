@@ -6279,12 +6279,6 @@
 		(uuid "31e12a70-d744-4c09-add4-782edd3c0771")
 	)
 	(junction
-		(at 88.9 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83bb3f2a-88f6-47bb-b477-16791c529c2b")
-	)
-	(junction
 		(at 170.18 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6301,12 +6295,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a5274861-7b3f-4cfb-95d2-8c1beeb25d68")
-	)
-	(junction
-		(at 107.95 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5867462-ee87-4c5d-9ebb-a37be1d2b47a")
 	)
 	(junction
 		(at 161.29 152.4)
@@ -6337,12 +6325,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9aa5132-cf1d-42d1-9819-316500ff8962")
-	)
-	(junction
-		(at 52.07 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d9af47fc-e01d-4fc1-ac59-8262a86ec7b6")
 	)
 	(junction
 		(at 156.21 152.4)
@@ -6396,16 +6378,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 175.26) (xy 113.03 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b6fd288-54b5-4c09-9f79-fe3063fde6ff")
-	)
-	(wire
-		(pts
 			(xy 52.07 41.91) (xy 52.07 43.18)
 		)
 		(stroke
@@ -6413,16 +6385,6 @@
 			(type default)
 		)
 		(uuid "1aff88ab-b245-4fb9-a18b-3bdc374867ee")
-	)
-	(wire
-		(pts
-			(xy 115.57 175.26) (xy 115.57 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "204f23b7-865e-46db-83ed-2f75d63ffbe2")
 	)
 	(wire
 		(pts
@@ -6496,16 +6458,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 72.39) (xy 107.95 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ff800c6-8427-459b-8cf4-55b5a46fdae8")
-	)
-	(wire
-		(pts
 			(xy 161.29 144.78) (xy 161.29 143.51)
 		)
 		(stroke
@@ -6516,16 +6468,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 72.39) (xy 88.9 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42f436ae-0d0a-4ae6-b169-d180806814a6")
-	)
-	(wire
-		(pts
 			(xy 156.21 152.4) (xy 161.29 152.4)
 		)
 		(stroke
@@ -6533,16 +6475,6 @@
 			(type default)
 		)
 		(uuid "4f1a0306-992e-482d-9a1b-d31bbbe5e07b")
-	)
-	(wire
-		(pts
-			(xy 88.9 68.58) (xy 88.9 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "624df47d-4f1a-4d1f-82de-de923fb1c915")
 	)
 	(wire
 		(pts
@@ -6596,16 +6528,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 72.39) (xy 52.07 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7275562b-0f04-4175-a7e8-4023a2538c43")
-	)
-	(wire
-		(pts
 			(xy 74.93 66.04) (xy 74.93 63.5)
 		)
 		(stroke
@@ -6613,16 +6535,6 @@
 			(type default)
 		)
 		(uuid "771b0349-92ff-4e65-9e90-89727b6b43e5")
-	)
-	(wire
-		(pts
-			(xy 118.11 175.26) (xy 118.11 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7974c2ed-8797-4325-ac07-b15a0862e5ee")
 	)
 	(wire
 		(pts
@@ -6686,7 +6598,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 66.04) (xy 52.07 63.5)
+			(xy 52.07 64.77) (xy 52.07 63.5)
 		)
 		(stroke
 			(width 0)
@@ -6746,16 +6658,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 175.26) (xy 110.49 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f213fe9-c4a2-4c17-8cab-54ecb8db9db6")
-	)
-	(wire
-		(pts
 			(xy 29.21 124.46) (xy 29.21 123.19)
 		)
 		(stroke
@@ -6796,16 +6698,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 72.39) (xy 74.93 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa84372d-6843-4610-850b-38f61688d97f")
-	)
-	(wire
-		(pts
 			(xy 27.94 139.7) (xy 30.48 139.7)
 		)
 		(stroke
@@ -6823,16 +6715,6 @@
 			(type default)
 		)
 		(uuid "bd7aa320-570f-45d0-ba5d-225c1b8ba611")
-	)
-	(wire
-		(pts
-			(xy 107.95 72.39) (xy 107.95 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3cd3b9b-3543-487d-b2ab-4ab4c9e71462")
 	)
 	(wire
 		(pts
@@ -6943,16 +6825,6 @@
 			(type default)
 		)
 		(uuid "f3d3ba76-57bf-4501-8258-a942205ece0d")
-	)
-	(wire
-		(pts
-			(xy 52.07 72.39) (xy 52.07 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f85f7cef-0a1b-4835-8d60-d619e9b34dc2")
 	)
 	(global_label "IO4"
 		(shape input)
@@ -7572,7 +7444,7 @@
 	)
 	(global_label "PWM"
 		(shape input)
-		(at 110.49 175.26 90)
+		(at 110.49 177.8 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7582,7 +7454,7 @@
 		)
 		(uuid "3ed579f9-580c-45b3-bb21-38b5fe643290")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.49 168.102 90)
+			(at 110.49 170.642 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8562,7 +8434,7 @@
 	)
 	(global_label "VD_o"
 		(shape input)
-		(at 113.03 175.26 90)
+		(at 113.03 177.8 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8572,7 +8444,7 @@
 		)
 		(uuid "bbeb3818-e502-4f98-ba40-2d0ee0cb6b50")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 167.7996 90)
+			(at 113.03 170.3396 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8848,7 +8720,7 @@
 	)
 	(global_label "Therm+"
 		(shape input)
-		(at 118.11 175.26 90)
+		(at 118.11 177.8 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8858,7 +8730,7 @@
 		)
 		(uuid "d646d8ad-f4eb-4f7e-a704-f184210d1aec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 165.0177 90)
+			(at 118.11 167.5577 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9178,7 +9050,7 @@
 	)
 	(global_label "Therm-"
 		(shape input)
-		(at 115.57 175.26 90)
+		(at 115.57 177.8 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9188,7 +9060,7 @@
 		)
 		(uuid "fd16437d-df6a-40c2-95e7-52c119d0ac1d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.57 165.0177 90)
+			(at 115.57 167.5577 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9229,7 +9101,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01dbba88-4afb-411b-badc-03d57dafda86")
-		(property "Reference" "U3"
+		(property "Reference" "U1"
 			(at 39.37 59.69 0)
 			(effects
 				(font
@@ -9272,6 +9144,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C354068"
+			(at 39.37 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "519f417c-ceb5-4dd1-afb5-22aa275024aa")
 		)
@@ -9284,7 +9165,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "U3")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -9464,6 +9345,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C720477"
+			(at 52.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b895e69c-01f5-4f83-adf7-e0054925df45")
 		)
@@ -9481,15 +9371,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 52.07 69.85 0)
+		(at 52.07 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "03169b0b-f051-4c53-a8b7-26ba44e0de0a")
-		(property "Reference" "reg_5V_smoothing_caps_out1"
-			(at 58.674 73.152 0)
+		(property "Reference" "5Vout1"
+			(at 64.516 70.866 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9498,7 +9388,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 48.26 70.612 0)
+			(at 48.26 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9506,8 +9396,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 53.0352 73.66 0)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
+			(at 53.0352 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9516,7 +9406,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 69.85 0)
+			(at 52.07 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9525,7 +9415,16 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 52.07 69.85 0)
+			(at 52.07 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3343"
+			(at 52.07 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9542,7 +9441,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "reg_5V_smoothing_caps_out1")
+					(reference "5Vout1")
 					(unit 1)
 				)
 			)
@@ -9557,8 +9456,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0757f0fa-033c-44c4-89eb-15ea0a434d88")
-		(property "Reference" "Trans_3"
-			(at 52.578 192.024 90)
+		(property "Reference" "mosfet3"
+			(at 47.752 192.532 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -9575,7 +9474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_SD-502352-001_02_MOL"
+		(property "Footprint" "Connector_4:CONN_SD-502352-001_02_MOL"
 			(at 57.15 177.8 0)
 			(effects
 				(font
@@ -9604,6 +9503,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C114107"
+			(at 57.15 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f0ed6503-05c0-43e4-95b7-718c4baa9829")
 		)
@@ -9619,7 +9527,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "Trans_3")
+					(reference "mosfet3")
 					(unit 1)
 				)
 			)
@@ -9635,7 +9543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0de68044-8af4-4b6d-a4a2-cd5f87d92c57")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR048"
 			(at 273.05 148.59 0)
 			(effects
 				(font
@@ -9686,7 +9594,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR038")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -9701,7 +9609,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e92661b-edf6-4757-af6a-d9f361e48fdc")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR033"
 			(at 156.21 140.97 0)
 			(effects
 				(font
@@ -9751,7 +9659,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR044")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -9766,7 +9674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10ecb517-5a4f-4f44-98af-a2b79928bdd0")
-		(property "Reference" "motor1_c1"
+		(property "Reference" "motorc1"
 			(at 178.816 80.518 90)
 			(effects
 				(font
@@ -9774,7 +9682,7 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "100uF"
 			(at 178.054 83.058 90)
 			(effects
 				(font
@@ -9782,7 +9690,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 177.8 86.6648 0)
 			(effects
 				(font
@@ -9809,6 +9717,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2749"
+			(at 173.99 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "11e7bf52-f8a9-4a53-bbd1-b55ce65f8bd1")
 		)
@@ -9818,7 +9735,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "motor1_c1")
+					(reference "motorc1")
 					(unit 1)
 				)
 			)
@@ -9834,7 +9751,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "119fff26-334e-4cd6-ac89-71e27930b470")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR037"
 			(at 170.18 88.9 0)
 			(effects
 				(font
@@ -9884,7 +9801,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR040")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -9900,7 +9817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12392334-e6d5-4373-92f1-92a9b3ddd152")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 57.15 45.7199 0)
 			(effects
 				(font
@@ -9945,6 +9862,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C27834"
+			(at 57.15 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "07d8b2a1-eaa3-484c-88d6-df2a362adc30")
 		)
@@ -9954,7 +9880,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -9970,7 +9896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13a87cfa-539e-43a6-b5ad-8dcb66f25497")
-		(property "Reference" "R1"
+		(property "Reference" "R_En1"
 			(at 31.75 110.4899 0)
 			(effects
 				(font
@@ -10015,6 +9941,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17408"
+			(at 31.75 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "20201c3b-91c5-4475-b79e-4c5bd221da61")
 		)
@@ -10024,7 +9959,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "R1")
+					(reference "R_En1")
 					(unit 1)
 				)
 			)
@@ -10040,7 +9975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14890c42-aebb-4a3b-a6af-9c50d9493d8a")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR010"
 			(at 31.75 190.5 0)
 			(effects
 				(font
@@ -10091,7 +10026,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR031")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -10107,7 +10042,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "166cb3b6-81e1-4437-b978-bc964a1cd367")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR022"
 			(at 74.93 63.5 0)
 			(effects
 				(font
@@ -10158,7 +10093,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR09")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -10173,7 +10108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22a2ef04-bbe9-4e4e-a628-67eaa81decf5")
-		(property "Reference" "VoltageDivider1"
+		(property "Reference" "vd1"
 			(at 107.188 191.77 90)
 			(effects
 				(font
@@ -10220,6 +10155,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C277598"
+			(at 118.11 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "525b00b6-d398-4972-908a-6560de402c06")
 		)
@@ -10241,7 +10185,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "VoltageDivider1")
+					(reference "vd1")
 					(unit 1)
 				)
 			)
@@ -10257,7 +10201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a4c8c3d-3286-496a-8b32-b7bc245826e0")
-		(property "Reference" "J3"
+		(property "Reference" "IO1"
 			(at 15.24 148.59 0)
 			(effects
 				(font
@@ -10345,7 +10289,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "J3")
+					(reference "IO1")
 					(unit 1)
 				)
 			)
@@ -10360,7 +10304,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b245217-e3ca-49ac-815a-39a9a42e3eb4")
-		(property "Reference" "R4"
+		(property "Reference" "R1"
 			(at 48.006 46.228 0)
 			(effects
 				(font
@@ -10405,6 +10349,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C27834"
+			(at 48.006 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff22e3fd-c2bc-44ec-9475-f6054336f592")
 		)
@@ -10414,7 +10367,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "R4")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -10430,7 +10383,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c7a7678-96b1-41a5-8861-6c89e2cddad4")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR029"
 			(at 99.06 95.25 0)
 			(effects
 				(font
@@ -10480,7 +10433,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR06")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -10496,7 +10449,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30466da7-4f2e-406e-9ca9-ef72b105748c")
-		(property "Reference" "mosfet1"
+		(property "Reference" "mosfet4"
 			(at 261.62 142.24 90)
 			(effects
 				(font
@@ -10542,6 +10495,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C9114"
+			(at 261.62 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "57891d6b-7e0a-4bc9-a21e-8bf18e41d0a0")
 		)
@@ -10554,7 +10516,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "mosfet1")
+					(reference "mosfet4")
 					(unit 1)
 				)
 			)
@@ -10570,7 +10532,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32f9a5c8-a2e9-4ae0-b6c1-c387b103839b")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR08"
 			(at 30.48 100.33 0)
 			(effects
 				(font
@@ -10620,7 +10582,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR04")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -10636,7 +10598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33797760-497d-4a04-9013-fbbe787ce9d8")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR047"
 			(at 240.03 88.9 0)
 			(effects
 				(font
@@ -10687,7 +10649,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR039")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -10745,6 +10707,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C969102"
+			(at 88.9 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1ec0cebd-6410-4463-8863-280741c5f2e7")
 		)
@@ -10768,11 +10739,11 @@
 		(at 30.48 190.5 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "476d2db2-70aa-4d01-a330-e959f596480a")
-		(property "Reference" "J4"
+		(property "Reference" "power1"
 			(at 36.83 182.88 0)
 			(effects
 				(font
@@ -10817,6 +10788,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5188434"
+			(at 30.48 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3832ed42-4038-4449-9401-b8d048eb1d7f")
 		)
@@ -10826,7 +10806,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "J4")
+					(reference "power1")
 					(unit 1)
 				)
 			)
@@ -10842,7 +10822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48eabd66-56ea-4bd5-8f64-39306b2d412e")
-		(property "Reference" "R2"
+		(property "Reference" "R_boot1"
 			(at 34.29 133.35 90)
 			(effects
 				(font
@@ -10885,6 +10865,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17408"
+			(at 34.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5aa862a1-1f09-4f6c-91b8-3310c7302078")
 		)
@@ -10894,7 +10883,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "R2")
+					(reference "R_boot1")
 					(unit 1)
 				)
 			)
@@ -10910,7 +10899,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49d2baa0-88a2-45a3-8477-254aaf404523")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR046"
 			(at 237.49 148.59 0)
 			(effects
 				(font
@@ -10961,7 +10950,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR037")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10977,7 +10966,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cd93d5e-f21b-41d4-8c69-1902d7b98ee4")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR06"
 			(at 29.21 129.54 0)
 			(effects
 				(font
@@ -11027,7 +11016,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR016")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -11042,8 +11031,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ce04d55-bd25-4d78-acbe-1a1762be6414")
-		(property "Reference" "Trans_2"
-			(at 70.358 192.024 90)
+		(property "Reference" "mosfet2"
+			(at 65.532 191.77 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11060,7 +11049,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_SD-502352-001_02_MOL"
+		(property "Footprint" "Connector_4:CONN_SD-502352-001_02_MOL"
 			(at 74.93 177.8 0)
 			(effects
 				(font
@@ -11089,6 +11078,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C114107"
+			(at 74.93 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cc65c82d-6f18-486a-af9b-6cbad427c7ed")
 		)
@@ -11104,7 +11102,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "Trans_2")
+					(reference "mosfet2")
 					(unit 1)
 				)
 			)
@@ -11157,6 +11155,15 @@
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 44.45 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5338271"
+			(at 63.5 25.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11233,7 +11240,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5245c618-f35c-459f-a44f-ca258d2c44f4")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR043"
 			(at 226.06 91.44 0)
 			(effects
 				(font
@@ -11283,7 +11290,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR041")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -11299,7 +11306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "583fc452-51f3-4bb4-b295-efb53d8f4933")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR021"
 			(at 68.58 115.57 0)
 			(effects
 				(font
@@ -11349,7 +11356,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR020")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -11468,72 +11475,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 107.95 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b9dc910-05b0-4b99-9210-1782041d099f")
-		(property "Reference" "#PWR012"
-			(at 107.95 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 107.95 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ba84b71-737c-4714-a5f6-87aadaa1ffa9")
-		)
-		(instances
-			(project "V67_cycletron"
-				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 113.03 63.5 270)
 		(unit 1)
@@ -11543,7 +11484,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5da2ff8f-7f64-463f-abb9-0a68dc638c8b")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR032"
 			(at 109.22 63.5 0)
 			(effects
 				(font
@@ -11594,7 +11535,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR08")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -11652,6 +11593,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17513"
+			(at 231.902 150.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e1eda99e-c694-497c-bece-2c062dcc8345")
 		)
@@ -11676,8 +11626,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6467e55f-2b4e-44c2-af62-e887c4006e84")
-		(property "Reference" "reg_3v3_smoother_out1"
-			(at 98.806 66.04 0)
+		(property "Reference" "3v3out1"
+			(at 97.028 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11694,7 +11644,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
 			(at 108.9152 73.66 0)
 			(effects
 				(font
@@ -11721,6 +11671,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C3343"
+			(at 107.95 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a0421b7-94a7-463f-ae30-cc4318804c86")
 		)
@@ -11730,7 +11689,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "reg_3v3_smoother_out1")
+					(reference "3v3out1")
 					(unit 1)
 				)
 			)
@@ -11746,7 +11705,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6583f600-53d0-45e0-83ff-43766e8cbdea")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR015"
 			(at 52.07 78.74 0)
 			(effects
 				(font
@@ -11796,7 +11755,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR026")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -11811,8 +11770,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69ef1286-4f23-4572-bbb5-e19434cd9313")
-		(property "Reference" "esp_smoothingcaps_2"
-			(at 43.688 86.868 0)
+		(property "Reference" "smooth_cap2"
+			(at 49.53 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11856,6 +11815,15 @@
 				(hide yes)
 			)
 		)
+		(property "Label" "C1711"
+			(at 48.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8bd4ce60-9e63-4a72-84a2-f1b82636eef9")
 		)
@@ -11865,7 +11833,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "esp_smoothingcaps_2")
+					(reference "smooth_cap2")
 					(unit 1)
 				)
 			)
@@ -11880,7 +11848,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6bcd59a9-f041-4a1a-918c-a8af4c22f96f")
-		(property "Reference" "esp_smoothingcaps_1"
+		(property "Reference" "smooth_cap1"
 			(at 19.812 86.868 0)
 			(effects
 				(font
@@ -11925,6 +11893,15 @@
 				(hide yes)
 			)
 		)
+		(property "Label" "C1711"
+			(at 30.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f25dd875-18f2-4b2e-af5e-731c6055db70")
 		)
@@ -11934,7 +11911,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "esp_smoothingcaps_1")
+					(reference "smooth_cap1")
 					(unit 1)
 				)
 			)
@@ -11949,7 +11926,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d3465f6-57bc-4d09-8ccb-ed8adbfdae14")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR034"
 			(at 156.21 166.37 0)
 			(effects
 				(font
@@ -11999,7 +11976,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR045")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -12015,7 +11992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6debc455-58f8-449e-802f-6e021529a099")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR016"
 			(at 49.53 63.5 0)
 			(effects
 				(font
@@ -12066,7 +12043,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR010")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -12082,7 +12059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "702de166-7b57-4a42-80d1-be37c99df90b")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR014"
 			(at 52.07 57.15 0)
 			(effects
 				(font
@@ -12132,7 +12109,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR018")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -12260,7 +12237,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71cd2b94-a7c5-4c81-85e9-c99db69f21f8")
-		(property "Reference" "J2"
+		(property "Reference" "input1"
 			(at 80.01 16.5099 90)
 			(effects
 				(font
@@ -12314,7 +12291,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "J2")
+					(reference "input1")
 					(unit 1)
 				)
 			)
@@ -12330,7 +12307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72d4bfb3-6d68-4533-a594-2a2e1b282a68")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR042"
 			(at 219.71 99.06 0)
 			(effects
 				(font
@@ -12381,7 +12358,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR025")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -12443,6 +12420,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C277598"
+			(at 151.892 193.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e231f17c-ef9e-433f-9baf-1f8351b68f25")
 		)
@@ -12480,7 +12466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75b91a16-a929-4e46-82d9-96ae06243709")
-		(property "Reference" "mosfet3"
+		(property "Reference" "mosfet6"
 			(at 194.31 142.24 90)
 			(effects
 				(font
@@ -12526,6 +12512,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C9114"
+			(at 194.31 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b99ac5e9-9a5d-44ee-8c9b-a85198aeb204")
 		)
@@ -12538,7 +12533,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "mosfet3")
+					(reference "mosfet6")
 					(unit 1)
 				)
 			)
@@ -12553,7 +12548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77044c0d-4426-4101-b057-99cf5674a380")
-		(property "Reference" "vd_c3"
+		(property "Reference" "vd_c2"
 			(at 164.338 146.304 0)
 			(effects
 				(font
@@ -12598,6 +12593,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C123143"
+			(at 164.338 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "34a4bfa5-2739-4d7c-a848-d9e8012aab69")
 		)
@@ -12607,7 +12611,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "vd_c3")
+					(reference "vd_c2")
 					(unit 1)
 				)
 			)
@@ -12623,7 +12627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78cd7761-90b9-479b-8c4f-40dda1d0c702")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR045"
 			(at 234.95 125.73 0)
 			(effects
 				(font
@@ -12674,7 +12678,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR035")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -12690,7 +12694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8023c678-677c-4629-91fb-ae60a343ad68")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR035"
 			(at 163.83 100.33 0)
 			(effects
 				(font
@@ -12741,7 +12745,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR024")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -12757,7 +12761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81f239ea-4048-4568-bd8f-7cc1e18c5a25")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR05"
 			(at 29.21 111.76 0)
 			(effects
 				(font
@@ -12807,7 +12811,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR015")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -12887,7 +12891,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9104c7f6-2d16-4280-957c-26577178d1c4")
 		(property "Reference" "#PWR017"
 			(at 54.61 57.15 0)
@@ -12899,7 +12902,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 55.88 0)
+			(at 56.896 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12955,7 +12958,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "910e02c5-48bd-419f-bfcb-f80eb90ca046")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 101.2033 88.9 0)
 			(effects
 				(font
@@ -12993,6 +12996,15 @@
 		)
 		(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD"
 			(at 99.06 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2913197"
+			(at 101.2033 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13126,7 +13138,73 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "U1")
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 107.95 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "942abda7-e8b1-4842-80c0-2677362872f1")
+		(property "Reference" "#PWR031"
+			(at 107.95 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9932adfb-eb73-4725-8819-51b488057a08")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -13141,7 +13219,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9575021b-cdc6-4d1c-92c4-7b882ed8b144")
-		(property "Reference" "tr1"
+		(property "Reference" "tr3"
 			(at 267.97 150.876 90)
 			(effects
 				(font
@@ -13184,6 +13262,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17513"
+			(at 267.97 150.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d8cfa3cc-ad38-426f-9caf-2cb25698616b")
 		)
@@ -13193,7 +13280,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "tr1")
+					(reference "tr3")
 					(unit 1)
 				)
 			)
@@ -13209,7 +13296,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b29329b-4e29-4808-899b-84c57f7e6ec2")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR039"
 			(at 179.07 127 0)
 			(effects
 				(font
@@ -13260,7 +13347,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR034")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -13276,7 +13363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dc8f294-2e22-4a42-b7d2-e8d5e0b62c6f")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR019"
 			(at 66.04 139.7 0)
 			(effects
 				(font
@@ -13326,7 +13413,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR022")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -13341,7 +13428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a096a281-d9a9-4b90-905c-1a8cc6a6f3e1")
-		(property "Reference" "C8"
+		(property "Reference" "C2"
 			(at 48.768 128.778 0)
 			(effects
 				(font
@@ -13386,6 +13473,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28233"
+			(at 48.768 128.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f4c2f0e2-ca0a-49fc-a356-14cac7598774")
 		)
@@ -13395,7 +13491,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "C8")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -13410,7 +13506,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a195fe24-e235-4dcd-bf39-c6fa48b2fa40")
-		(property "Reference" "vd_c4"
+		(property "Reference" "vd_c1"
 			(at 164.084 132.334 90)
 			(effects
 				(font
@@ -13455,6 +13551,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C377773"
+			(at 164.084 132.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c9101150-3a6a-4c22-9434-203125f76931")
 		)
@@ -13464,7 +13569,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "vd_c4")
+					(reference "vd_c1")
 					(unit 1)
 				)
 			)
@@ -13480,7 +13585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3a61605-ffbf-46ac-a9cb-6f843a3d9417")
-		(property "Reference" "D3"
+		(property "Reference" "D1"
 			(at 68.58 26.9875 0)
 			(effects
 				(font
@@ -13523,6 +13628,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C22452"
+			(at 68.58 26.9875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e73b09be-881a-498f-81a0-839a2b7788a7")
 		)
@@ -13532,7 +13646,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "D3")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -13547,8 +13661,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4525d36-408d-4e42-a16c-b6c168fa90b1")
-		(property "Reference" "reg_5V_smoothing_caps_in1"
-			(at 30.734 71.12 0)
+		(property "Reference" "5Vin1"
+			(at 28.448 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13565,7 +13679,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 30.1752 72.39 0)
 			(effects
 				(font
@@ -13592,6 +13706,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2749"
+			(at 28.448 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c758b83a-0a98-4384-8226-22f35732c53d")
 		)
@@ -13601,7 +13724,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "reg_5V_smoothing_caps_in1")
+					(reference "5Vin1")
 					(unit 1)
 				)
 			)
@@ -13617,7 +13740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac57eb6f-db50-41a2-be1e-cc847c270872")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR020"
 			(at 59.69 181.61 0)
 			(effects
 				(font
@@ -13667,7 +13790,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR047")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -13683,7 +13806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad076a20-b60f-4747-8b34-7b1f6f3b8f8a")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR09"
 			(at 41.91 187.96 0)
 			(effects
 				(font
@@ -13734,7 +13857,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR030")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -13750,7 +13873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad465958-3d22-4e36-9620-4c859cd7fbbb")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR036"
 			(at 170.18 138.43 0)
 			(effects
 				(font
@@ -13801,7 +13924,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR046")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -13863,6 +13986,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C277598"
+			(at 132.588 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "e685f7d8-8a8e-4391-8a64-dcc84aabd789")
 		)
@@ -13900,7 +14032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2baa689-0427-4618-8841-25c5d02a8d27")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR02"
 			(at 15.24 26.67 0)
 			(effects
 				(font
@@ -13951,7 +14083,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR019")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -13966,7 +14098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b47fc79c-3836-4a9c-999d-bca0687a3bb3")
-		(property "Reference" "tr3"
+		(property "Reference" "tr1"
 			(at 200.152 151.13 90)
 			(effects
 				(font
@@ -14009,6 +14141,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17513"
+			(at 200.152 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d839d44a-bda0-4e4c-a64d-303da68fce38")
 		)
@@ -14018,7 +14159,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "tr3")
+					(reference "tr1")
 					(unit 1)
 				)
 			)
@@ -14033,8 +14174,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b4e05085-a276-4a34-82c0-4c99db2958e6")
-		(property "Reference" "Trans_1"
-			(at 88.138 192.024 90)
+		(property "Reference" "mosfet1"
+			(at 85.344 192.278 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14051,7 +14192,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_SD-502352-001_02_MOL"
+		(property "Footprint" "Connector_4:CONN_SD-502352-001_02_MOL"
 			(at 92.71 177.8 0)
 			(effects
 				(font
@@ -14080,6 +14221,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C114107"
+			(at 92.71 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8337a353-6def-406d-bc2c-f9a7c26b58ac")
 		)
@@ -14095,7 +14245,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "Trans_1")
+					(reference "mosfet1")
 					(unit 1)
 				)
 			)
@@ -14111,7 +14261,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5c98318-4e92-46d2-8d93-efa3c7e3a1b7")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR044"
 			(at 226.06 132.08 0)
 			(effects
 				(font
@@ -14161,7 +14311,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR029")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -14176,7 +14326,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b6814b08-9e82-4beb-b72a-f4ce8148ac4f")
-		(property "Reference" "reg_3v3_smoother_in1"
+		(property "Reference" "3v3in1"
 			(at 78.486 72.39 0)
 			(effects
 				(font
@@ -14194,7 +14344,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 75.8952 73.66 0)
 			(effects
 				(font
@@ -14221,6 +14371,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2749"
+			(at 78.486 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66d4ea00-1ad3-416a-847e-186695274669")
 		)
@@ -14230,7 +14389,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "reg_3v3_smoother_in1")
+					(reference "3v3in1")
 					(unit 1)
 				)
 			)
@@ -14246,7 +14405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bae64c49-6a48-433a-aee1-c6cb5d24d2bb")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 33.02 63.5 0)
 			(effects
 				(font
@@ -14297,7 +14456,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -14313,7 +14472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bec4880a-0753-4cfb-96a0-acffe9124159")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR028"
 			(at 93.98 181.61 0)
 			(effects
 				(font
@@ -14363,7 +14522,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR049")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -14378,7 +14537,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c071a7b5-4876-4dd9-90e1-8bcceb07deed")
-		(property "Reference" "motor2_c1"
+		(property "Reference" "motorc2"
 			(at 233.426 82.042 90)
 			(effects
 				(font
@@ -14386,7 +14545,7 @@
 				)
 			)
 		)
-		(property "Value" "C_Polarized"
+		(property "Value" "100uF"
 			(at 233.934 84.328 90)
 			(effects
 				(font
@@ -14394,7 +14553,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 233.68 87.9348 0)
 			(effects
 				(font
@@ -14421,6 +14580,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2749"
+			(at 229.87 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e71df22c-4ecb-4d00-af8d-09b097f73994")
 		)
@@ -14430,7 +14598,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "motor2_c1")
+					(reference "motorc2")
 					(unit 1)
 				)
 			)
@@ -14446,7 +14614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c130c9a7-9a4e-4010-bee8-e8ba5b8a57d2")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR030"
 			(at 99.06 153.67 0)
 			(effects
 				(font
@@ -14496,7 +14664,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR03")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -14511,7 +14679,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c30370f8-42c4-4639-a430-d78125058b19")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR038"
 			(at 170.18 133.35 0)
 			(effects
 				(font
@@ -14561,7 +14729,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR028")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -14577,7 +14745,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c435c97f-f058-4a9f-b5d4-26631945f0e0")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR01"
 			(at 15.24 19.05 0)
 			(effects
 				(font
@@ -14628,7 +14796,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR021")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -14644,7 +14812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c44a9eda-ea2a-4976-80f9-beaa81c6656a")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR025"
 			(at 76.2 181.61 0)
 			(effects
 				(font
@@ -14694,7 +14862,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR048")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -14710,7 +14878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7a21a45-81ef-4bf1-b3b3-d43b311bca1b")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR07"
 			(at 30.48 90.17 0)
 			(effects
 				(font
@@ -14760,7 +14928,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR014")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -14768,7 +14936,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 72.39 0)
+		(at 74.93 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14776,8 +14944,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caf82abc-9f28-4e5f-8e9b-76281b146cfd")
-		(property "Reference" "#PWR013"
-			(at 74.93 78.74 0)
+		(property "Reference" "#PWR024"
+			(at 74.93 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14786,7 +14954,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 77.47 0)
+			(at 74.93 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14794,7 +14962,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 72.39 0)
+			(at 74.93 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14803,7 +14971,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 72.39 0)
+			(at 74.93 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14812,7 +14980,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 72.39 0)
+			(at 74.93 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14826,7 +14994,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR013")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -15006,6 +15174,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C720477"
+			(at 48.26 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f33b025-5857-4153-96d0-3a937590dfa5")
 		)
@@ -15031,7 +15208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd3f6ff8-8378-4224-abfe-34ba036f0a3c")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR040"
 			(at 184.15 87.63 0)
 			(effects
 				(font
@@ -15082,7 +15259,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR042")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -15098,7 +15275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ced3f99f-7683-4c7f-aa59-3d99954e2d15")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR026"
 			(at 83.82 22.86 0)
 			(effects
 				(font
@@ -15149,7 +15326,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR032")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -15165,7 +15342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf734127-5210-4a85-9a11-416e2a739d6a")
-		(property "Reference" "C6"
+		(property "Reference" "C1"
 			(at 33.02 119.3799 0)
 			(effects
 				(font
@@ -15210,6 +15387,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 33.02 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b8b7701b-2427-412b-9285-bada0929ce1f")
 		)
@@ -15219,7 +15405,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "C6")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -15235,7 +15421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2081ffd-436c-4be3-b185-2e147476a642")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR013"
 			(at 48.26 100.33 0)
 			(effects
 				(font
@@ -15285,7 +15471,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR02")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -15301,7 +15487,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3bce381-9926-4f81-879b-2a9862c9d360")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR023"
 			(at 74.93 26.67 0)
 			(effects
 				(font
@@ -15352,7 +15538,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR033")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -15360,7 +15546,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 72.39 0)
+		(at 88.9 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15368,8 +15554,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d86226d7-2ae8-4b3f-bf2b-04159574cfac")
-		(property "Reference" "#PWR07"
-			(at 88.9 78.74 0)
+		(property "Reference" "#PWR027"
+			(at 88.9 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15378,7 +15564,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 77.47 0)
+			(at 88.9 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15386,7 +15572,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 72.39 0)
+			(at 88.9 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15395,7 +15581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 72.39 0)
+			(at 88.9 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15404,7 +15590,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 72.39 0)
+			(at 88.9 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15418,7 +15604,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR07")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -15478,6 +15664,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2933447"
+			(at 158.496 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f97938ef-a1eb-49d7-b969-fd40cb6bc8cb")
 		)
@@ -15503,7 +15698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0853b7a-35e9-479d-a13a-809c972a07a5")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR012"
 			(at 48.26 90.17 0)
 			(effects
 				(font
@@ -15553,7 +15748,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -15569,7 +15764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f005b07e-8d59-4f65-b8b2-fb86cf173187")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR018"
 			(at 55.88 41.91 0)
 			(effects
 				(font
@@ -15620,7 +15815,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR023")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -15636,7 +15831,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f303f5fa-c4ef-46e8-a0c0-92dbdf63bc5a")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR04"
 			(at 29.21 78.74 0)
 			(effects
 				(font
@@ -15686,7 +15881,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR027")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -15702,7 +15897,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3b724ab-582a-496b-bf49-960f5797f08a")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR041"
 			(at 205.74 148.59 0)
 			(effects
 				(font
@@ -15753,7 +15948,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "#PWR036")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -15769,7 +15964,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc947add-ef64-4339-830d-2e7b2eeec194")
-		(property "Reference" "mosfet2"
+		(property "Reference" "mosfet5"
 			(at 226.06 142.24 90)
 			(effects
 				(font
@@ -15815,6 +16010,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C9114"
+			(at 226.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "74b021b2-0177-4fbf-bcab-2b8ff752a085")
 		)
@@ -15827,7 +16031,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "mosfet2")
+					(reference "mosfet5")
 					(unit 1)
 				)
 			)
