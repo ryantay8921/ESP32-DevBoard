@@ -195,6 +195,408 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Screw_Terminal_01x06"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x06"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Screw_Terminal_01x06_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 5.4102) (xy 0.3302 4.572)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 2.8702) (xy 0.3302 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -4.7498) (xy 0.3302 -5.588)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -7.2898) (xy 0.3302 -8.128)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 5.588) (xy 0.508 4.7498)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 3.048) (xy 0.508 2.2098)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -4.572) (xy 0.508 -5.4102)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -7.112) (xy 0.508 -7.9502)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 5.08)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x11"
 			(pin_names
 				(offset 1.016)
@@ -6965,22 +7367,22 @@
 	)
 	(global_label "I12"
 		(shape input)
-		(at 20.32 167.64 0)
+		(at 247.65 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "11e141f9-5751-4da2-baca-b9a9ed507655")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 167.64 0)
+			(at 247.65 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -7031,22 +7433,22 @@
 	)
 	(global_label "I09"
 		(shape input)
-		(at 20.32 160.02 0)
+		(at 255.27 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1cbba407-adfd-4f9e-8c9a-84a535666d59")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 160.02 0)
+			(at 255.27 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -7449,22 +7851,22 @@
 	)
 	(global_label "I11"
 		(shape input)
-		(at 20.32 165.1 0)
+		(at 250.19 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "5259456d-cb74-4bb1-a0eb-f9ee797c7f60")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 165.1 0)
+			(at 250.19 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -7669,22 +8071,22 @@
 	)
 	(global_label "I18"
 		(shape input)
-		(at 20.32 177.8 0)
+		(at 237.49 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "6a71d406-3557-4a53-b962-4aac03c1bbeb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 177.8 0)
+			(at 237.49 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -7779,22 +8181,22 @@
 	)
 	(global_label "Therm-"
 		(shape input)
-		(at 214.63 34.29 270)
+		(at 118.11 176.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "70fb5917-083f-47d0-b366-4315026c1695")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.63 44.5323 90)
+			(at 118.11 166.2877 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -7933,22 +8335,22 @@
 	)
 	(global_label "I20"
 		(shape input)
-		(at 20.32 182.88 0)
+		(at 232.41 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "7f95c8d0-fc72-4924-ba2b-661d079c700d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 182.88 0)
+			(at 232.41 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8109,22 +8511,22 @@
 	)
 	(global_label "I08"
 		(shape input)
-		(at 20.32 157.48 0)
+		(at 257.81 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "93e7aa52-ae41-449f-a1ca-f882ea946701")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 157.48 0)
+			(at 257.81 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8307,22 +8709,22 @@
 	)
 	(global_label "I10"
 		(shape input)
-		(at 20.32 162.56 0)
+		(at 252.73 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a36dbf31-7d09-49df-aff0-453154a814fd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 162.56 0)
+			(at 252.73 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8417,22 +8819,22 @@
 	)
 	(global_label "I15"
 		(shape input)
-		(at 20.32 170.18 0)
+		(at 245.11 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "bc559e40-7067-425d-a5fa-6213f5514083")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 170.18 0)
+			(at 245.11 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8461,22 +8863,22 @@
 	)
 	(global_label "I19"
 		(shape input)
-		(at 20.32 180.34 0)
+		(at 234.95 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "bc8b3c37-9456-4104-b2f6-6bf18a808099")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 180.34 0)
+			(at 234.95 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8703,22 +9105,22 @@
 	)
 	(global_label "I17"
 		(shape input)
-		(at 20.32 175.26 0)
+		(at 240.03 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "d9d1a154-25e4-4672-acf2-a5fd1a786ab0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 175.26 0)
+			(at 240.03 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8769,22 +9171,22 @@
 	)
 	(global_label "I16"
 		(shape input)
-		(at 20.32 172.72 0)
+		(at 242.57 27.94 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "e3c4f604-c949-4122-8de7-590b6a4882c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.329 172.72 0)
+			(at 242.57 33.949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8879,22 +9281,22 @@
 	)
 	(global_label "Therm+"
 		(shape input)
-		(at 217.17 34.29 270)
+		(at 115.57 176.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "f12ce6ce-e059-4d84-bc68-3e5fdf968032")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.17 44.5323 90)
+			(at 115.57 166.2877 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -9033,16 +9435,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x11")
-		(at 15.24 170.18 180)
+		(at 245.11 22.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "01388f32-4c98-4d62-bb0c-c0c118185e50")
 		(property "Reference" "J3"
-			(at 15.24 151.13 0)
+			(at 243.332 19.304 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9050,7 +9451,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x11"
-			(at 15.24 153.67 0)
+			(at 245.872 13.462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9058,7 +9459,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-11P_1x11_P5.00mm"
-			(at 15.24 170.18 0)
+			(at 245.11 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9067,7 +9468,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 15.24 170.18 0)
+			(at 245.11 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9076,7 +9477,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x11, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 15.24 170.18 0)
+			(at 245.11 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10153,7 +10554,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 35.56 190.5 270)
+		(at 222.25 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10162,7 +10563,7 @@
 		(fields_autoplaced yes)
 		(uuid "14890c42-aebb-4a3b-a6af-9c50d9493d8a")
 		(property "Reference" "#PWR010"
-			(at 31.75 190.5 0)
+			(at 222.25 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10171,7 +10572,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 39.37 190.5001 90)
+			(at 222.2499 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10180,7 +10581,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 190.5 0)
+			(at 222.25 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10189,7 +10590,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 190.5 0)
+			(at 222.25 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10198,7 +10599,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 35.56 190.5 0)
+			(at 222.25 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10280,6 +10681,72 @@
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f3f6e7a-1e36-4c53-8259-4bc2abbb8eda")
+		(property "Reference" "#PWR059"
+			(at 246.38 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 246.38 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "697693c6-af54-4936-a1b4-7d580ca6f61c")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -10593,89 +11060,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7000")
-		(at 261.62 151.13 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "30466da7-4f2e-406e-9ca9-ef72b105748c")
-		(property "Reference" "mosfet4"
-			(at 261.62 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2N7000"
-			(at 261.62 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
-			(at 263.525 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
-			(at 265.43 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
-			(at 261.62 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C9114"
-			(at 261.62 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57891d6b-7e0a-4bc9-a21e-8bf18e41d0a0")
-		)
-		(pin "2"
-			(uuid "00fec109-c860-43cc-94e1-76c211c2870f")
-		)
-		(pin "3"
-			(uuid "025dbcf9-6911-4f83-92b1-da1ea8519bde")
-		)
-		(instances
-			(project "V67_cycletron"
-				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "mosfet4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 30.48 93.98 0)
 		(unit 1)
@@ -10809,6 +11193,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x06")
+		(at 251.46 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "394bf756-a4bf-417d-92c7-4881b83db838")
+		(property "Reference" "Rails"
+			(at 252.73 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x06"
+			(at 252.73 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-06P_1x06_P5.00mm"
+			(at 251.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 251.46 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "4766ab58-2057-484d-82b7-c81e5c454a5b")
+		)
+		(pin "3"
+			(uuid "8a0d10b0-d9c0-43f3-bc83-ca09238e46be")
+		)
+		(pin "2"
+			(uuid "376f330e-9f8e-44f2-9443-b9901b24a3a1")
+		)
+		(pin "5"
+			(uuid "e1b40957-84fe-4436-8f87-215c338c01cd")
+		)
+		(pin "1"
+			(uuid "5d37a9d3-6152-4cf8-984a-47eb233f7d53")
+		)
+		(pin "6"
+			(uuid "053a8e58-562c-47c3-833f-6f95f82edaaa")
+		)
+		(instances
+			(project ""
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "Rails")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_2:5023520200")
 		(at 161.29 34.29 90)
 		(unit 1)
@@ -10896,7 +11360,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 173.99 90)
+		(at 215.9 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10905,7 +11369,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e1f7d98-3ad2-4488-9518-3ff40e5feb0d")
 		(property "Reference" "#PWR049"
-			(at 41.91 173.99 0)
+			(at 215.9 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10914,7 +11378,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 173.9901 90)
+			(at 215.8999 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10923,7 +11387,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 173.99 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10932,7 +11396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 173.99 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10941,7 +11405,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 173.99 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11042,7 +11506,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 30.48 190.5 180)
+		(at 222.25 22.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11050,7 +11514,7 @@
 		(dnp no)
 		(uuid "476d2db2-70aa-4d01-a330-e959f596480a")
 		(property "Reference" "power3"
-			(at 36.83 182.88 0)
+			(at 227.076 19.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11059,7 +11523,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 48.26 184.912 0)
+			(at 229.362 13.462 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11068,7 +11532,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
-			(at 30.48 190.5 0)
+			(at 222.25 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11077,7 +11541,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 190.5 0)
+			(at 222.25 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11086,7 +11550,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 30.48 190.5 0)
+			(at 222.25 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11095,7 +11559,7 @@
 			)
 		)
 		(property "LCSC" "C5188434 "
-			(at 30.48 190.5 0)
+			(at 222.25 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11532,6 +11996,73 @@
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 259.08 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4eeb51d8-5700-4308-bbd1-1e9adfb9ba3a")
+		(property "Reference" "#PWR064"
+			(at 259.08 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 259.0799 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 259.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96ffab7a-b855-4bef-8e48-fabac97dc405")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -12162,7 +12693,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69ef1286-4f23-4572-bbb5-e19434cd9313")
-		(property "Reference" "smooth_cap2"
+		(property "Reference" "mccap2"
 			(at 49.53 86.614 0)
 			(effects
 				(font
@@ -12225,7 +12756,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "smooth_cap2")
+					(reference "mccap2")
 					(unit 1)
 				)
 			)
@@ -12240,7 +12771,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6bcd59a9-f041-4a1a-918c-a8af4c22f96f")
-		(property "Reference" "smooth_cap1"
+		(property "Reference" "mccap1"
 			(at 19.812 86.868 0)
 			(effects
 				(font
@@ -12303,7 +12834,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "smooth_cap1")
+					(reference "mccap1")
 					(unit 1)
 				)
 			)
@@ -12697,7 +13228,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 35.56 176.53 270)
+		(at 213.36 27.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12706,7 +13237,7 @@
 		(fields_autoplaced yes)
 		(uuid "73aee786-53a9-46a2-afe4-bc0e13e1773c")
 		(property "Reference" "#PWR050"
-			(at 31.75 176.53 0)
+			(at 213.36 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12715,7 +13246,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 39.37 176.5301 90)
+			(at 213.3599 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12724,7 +13255,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 176.53 0)
+			(at 213.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12733,7 +13264,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 176.53 0)
+			(at 213.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12742,7 +13273,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 35.56 176.53 0)
+			(at 213.36 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12823,6 +13354,73 @@
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 256.54 72.39 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74c765dd-327d-4b32-bd8f-70ef7891b75f")
+		(property "Reference" "#PWR063"
+			(at 256.54 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 256.5399 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 256.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "981cdd9e-f410-4d2f-8c51-ab1a6a23a0cd")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -12938,7 +13536,7 @@
 				)
 			)
 		)
-		(property "Value" "2N7000"
+		(property "Value" "HD2305"
 			(at 194.31 144.78 90)
 			(effects
 				(font
@@ -12946,7 +13544,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 196.215 146.05 0)
 			(effects
 				(font
@@ -12976,7 +13574,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C9114"
+		(property "LCSC" "C466664"
 			(at 194.31 142.24 0)
 			(effects
 				(font
@@ -13970,6 +14568,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 248.92 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e4bcf8b-2539-48d8-8909-97cca30aaa7d")
+		(property "Reference" "#PWR060"
+			(at 248.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.92 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 248.92 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c413df90-9edb-4ecc-8db8-f8fddc42b6ff")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 49.53 120.65 90)
 		(unit 1)
@@ -14492,7 +15156,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 187.96 90)
+		(at 224.79 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14501,7 +15165,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad076a20-b60f-4747-8b34-7b1f6f3b8f8a")
 		(property "Reference" "#PWR09"
-			(at 41.91 187.96 0)
+			(at 224.79 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14510,7 +15174,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 187.9601 90)
+			(at 224.7899 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14519,7 +15183,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 187.96 0)
+			(at 224.79 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14528,7 +15192,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 187.96 0)
+			(at 224.79 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14537,7 +15201,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 187.96 0)
+			(at 224.79 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15300,7 +15964,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 30.48 176.53 180)
+		(at 213.36 22.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15308,7 +15972,7 @@
 		(dnp no)
 		(uuid "c0d93102-5ede-47f7-a423-59ef652df330")
 		(property "Reference" "power5"
-			(at 36.83 168.91 0)
+			(at 217.678 19.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15317,7 +15981,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 48.26 170.942 0)
+			(at 229.362 15.494 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15326,7 +15990,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
-			(at 30.48 176.53 0)
+			(at 213.36 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15335,7 +15999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 176.53 0)
+			(at 213.36 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15344,7 +16008,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 30.48 176.53 0)
+			(at 213.36 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15353,7 +16017,7 @@
 			)
 		)
 		(property "LCSC" "C5188434 "
-			(at 30.48 176.53 0)
+			(at 213.36 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16447,16 +17111,82 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 254 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dac1cbc4-ae00-4d9b-8e16-202598f681f0")
+		(property "Reference" "#PWR062"
+			(at 254 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 254 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d80f6a72-69e4-4f31-bc83-fdd7204c0e2c")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_2:5023520200")
-		(at 214.63 34.29 90)
+		(at 118.11 176.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "dd888474-4923-41f2-b1ce-8fe120c9fe78")
-		(property "Reference" "voltage_divider_2con1"
-			(at 234.696 20.066 90)
+		(property "Reference" "vdo1"
+			(at 98.044 190.754 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -16465,7 +17195,7 @@
 			)
 		)
 		(property "Value" "5023520200"
-			(at 225.044 17.272 90)
+			(at 107.696 193.548 90)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -16474,7 +17204,7 @@
 			)
 		)
 		(property "Footprint" "Connector_4:CONN_SD-502352-001_02_MOL"
-			(at 214.63 34.29 0)
+			(at 118.11 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16484,7 +17214,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/5023520200?display=pdf"
-			(at 214.63 34.29 0)
+			(at 118.11 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16494,7 +17224,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 214.63 34.29 0)
+			(at 118.11 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16503,7 +17233,7 @@
 			)
 		)
 		(property "LCSC" "C114107"
-			(at 214.63 34.29 90)
+			(at 118.11 176.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16526,7 +17256,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "voltage_divider_2con1")
+					(reference "vdo1")
 					(unit 1)
 				)
 			)
@@ -16671,6 +17401,172 @@
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7000")
+		(at 226.06 151.13 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e84ba25e-5307-4b30-bd66-58f469893576")
+		(property "Reference" "mosfet5"
+			(at 226.06 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HD2305"
+			(at 226.06 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 227.965 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
+			(at 229.87 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
+			(at 226.06 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C466664"
+			(at 226.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b375256f-704c-4f34-8ba2-835bfeaf3a92")
+		)
+		(pin "2"
+			(uuid "4b312619-614b-4042-a18c-2e915f4998a6")
+		)
+		(pin "3"
+			(uuid "49c03f15-db12-4493-81ac-ecaec12fdad5")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "mosfet5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7000")
+		(at 261.62 151.13 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eddc71dc-94dc-4db1-80bd-49109eb70b11")
+		(property "Reference" "mosfet4"
+			(at 261.62 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HD2305"
+			(at 261.62 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 263.525 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
+			(at 265.43 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
+			(at 261.62 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C466664"
+			(at 261.62 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e059f1e-4b10-4d3c-8fca-679f428ac10b")
+		)
+		(pin "2"
+			(uuid "9e9b74ed-c3d5-4dae-8365-0a8a7a15b6d0")
+		)
+		(pin "3"
+			(uuid "7f1c0106-c845-44d6-a161-f2e8da0470bc")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "mosfet4")
 					(unit 1)
 				)
 			)
@@ -16963,54 +17859,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7000")
-		(at 226.06 151.13 90)
+		(lib_id "power:GND")
+		(at 251.46 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fc947add-ef64-4339-830d-2e7b2eeec194")
-		(property "Reference" "mosfet5"
-			(at 226.06 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2N7000"
-			(at 226.06 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
-			(at 227.965 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
-			(at 229.87 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
-			(at 226.06 151.13 0)
+		(uuid "fa7135dc-fb88-4c65-98cc-3b773f59630e")
+		(property "Reference" "#PWR061"
+			(at 251.46 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17018,8 +17877,34 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C9114"
-			(at 226.06 142.24 0)
+		(property "Value" "GND"
+			(at 251.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17028,18 +17913,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "74b021b2-0177-4fbf-bcab-2b8ff752a085")
-		)
-		(pin "2"
-			(uuid "0fa34a00-5981-41b2-b2a0-68a500c8984d")
-		)
-		(pin "3"
-			(uuid "d5d32e68-5d95-42f5-a329-dfdc232364ae")
+			(uuid "3ef7b372-6e86-46cf-a4e3-6cdc85b7c3e6")
 		)
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "mosfet5")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
