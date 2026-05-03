@@ -1,0 +1,46 @@
+/*
+PIN DEFINITIONS (easy recall names)
+*/
+
+// General IO
+#define IO4   GPIO_NUM_4
+#define IO5   GPIO_NUM_5
+#define IO6   GPIO_NUM_6
+#define IO7   GPIO_NUM_7
+#define IO8   GPIO_NUM_15
+#define IO9   GPIO_NUM_16
+#define IO10  GPIO_NUM_17
+#define IO11  GPIO_NUM_18
+#define IO12  GPIO_NUM_8
+#define IO15  GPIO_NUM_3
+#define IO16  GPIO_NUM_46
+#define IO17  GPIO_NUM_9
+#define IO18  GPIO_NUM_10
+#define IO19  GPIO_NUM_11
+#define IO20  GPIO_NUM_12
+
+
+#define THERMISTOR_MINUS GPIO_NUM_21
+
+// MOSFETs
+#define MOSFET_1 GPIO_NUM_14
+#define MOSFET_2 GPIO_NUM_21
+#define MOSFET_3 GPIO_NUM_47
+
+// Motor 1
+#define M1_FLT   GPIO_NUM_48
+#define M1_EN    GPIO_NUM_45
+#define M1_M0    GPIO_NUM_35
+#define M1_M1    GPIO_NUM_36
+#define M1_M2    GPIO_NUM_37
+#define M1_STEP  GPIO_NUM_38
+#define M1_DIR   GPIO_NUM_39
+
+// Motor 2
+#define M2_FLT   GPIO_NUM_41
+#define M2_EN    GPIO_NUM_40
+#define M2_M0    GPIO_NUM_42
+#define M2_M1    GPIO_NUM_43
+#define M2_M2    GPIO_NUM_44
+#define M2_STEP  GPIO_NUM_2
+#define M2_DIR   GPIO_NUM_1
