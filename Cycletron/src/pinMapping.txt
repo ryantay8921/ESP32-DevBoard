@@ -37,10 +37,10 @@ PIN DEFINITIONS (easy recall names)
 #define M1_DIR   GPIO_NUM_39
 
 // Motor 2
-#define M2_FLT   GPIO_NUM_41
-#define M2_EN    GPIO_NUM_40
-#define M2_M0    GPIO_NUM_42
-#define M2_M1    GPIO_NUM_43
-#define M2_M2    GPIO_NUM_44
-#define M2_STEP  GPIO_NUM_2
-#define M2_DIR   GPIO_NUM_1
+#define M2_FLT   PIN34 GPIO_NUM_41
+#define M2_EN    PIN33 GPIO_NUM_40
+#define M2_M0    PIN35 GPIO_NUM_42
+#define M2_M1    PIN36 GPIO_NUM_43
+#define M2_M2    PIN37 GPIO_NUM_44
+#define M2_STEP  PIN38 GPIO_NUM_2
+#define M2_DIR   PIN39 GPIO_NUM_1

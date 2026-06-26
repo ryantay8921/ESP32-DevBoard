@@ -8,6 +8,7 @@ extern "C" {
 
 #include "esp_log.h"
 #include "GPIO.h"
+#include "DRV8825.h"
 
 static const char *TAG = "GPIO_TEST";
 
@@ -16,10 +17,12 @@ static const char *TAG = "GPIO_TEST";
 FEATURE FLAGS
 ====================================================
 */
-#define TEST_IO_PINS
+// #define TEST_IO_PINS
 // #define TEST_MOSFETS
 // #define TEST_MOTOR1
+// #define TEST_MOTOR2
 // #define TEST_SENSORS
+#define TEST_DRV8825_MOTOR2
 
 /*
 ====================================================
@@ -76,13 +79,22 @@ MOTOR 1
 */
 #ifdef TEST_MOTOR1
 static const PinMap motor1_pins[] = {
-    {"M1_FLT",  GPIO_NUM_48},
     {"M1_EN",   GPIO_NUM_45},
     {"M1_M0",   GPIO_NUM_35},
     {"M1_M1",   GPIO_NUM_36},
     {"M1_M2",   GPIO_NUM_37},
     {"M1_STEP", GPIO_NUM_38},
     {"M1_DIR",  GPIO_NUM_39}
+};
+#endif
+
+#ifdef TEST_MOTOR2
+static const PinMap motor2_pins[] = {
+    {"M2_EN",   GPIO_NUM_40},
+    {"M2_M0",   GPIO_NUM_42},
+    {"M2_M1",   GPIO_NUM_44},
+    {"M2_M2",   GPIO_NUM_44},
+    {"M2_DIR",  GPIO_NUM_1}
 };
 #endif
 
@@ -95,6 +107,25 @@ SENSORS (THERMISTOR)
 static const PinMap sensor_pins[] = {
     {"THERMISTOR_MINUS", GPIO_NUM_21}
 };
+#endif
+
+/*
+====================================================
+DRV8825 MOTOR 2
+====================================================
+*/
+#ifdef TEST_DRV8825_MOTOR2
+
+static DRV8825_t motor2 = {
+    .step_pin   = GPIO_NUM_2,
+    .dir_pin    = GPIO_NUM_1,
+    .fault_pin  = GPIO_NUM_42,
+    .mode0_pin  = GPIO_NUM_43,
+    .mode1_pin  = GPIO_NUM_44,
+    .mode2_pin  = GPIO_NUM_44,
+    .enable_pin = GPIO_NUM_40
+};
+
 #endif
 
 /*
@@ -118,114 +149,199 @@ extern "C" void app_main(void)
 {
     ESP_LOGI(TAG, "GPIO modular test starting...");
 
-    while (1) {
-
-        /*
-        =====================
-        INIT ALL ACTIVE GROUPS
-        =====================
-        */
+    /*
+    ====================================================
+    INIT ALL ACTIVE GROUPS
+    ====================================================
+    */
 
 #ifdef TEST_IO_PINS
-        int io_size = sizeof(io_pins) / sizeof(io_pins[0]);
-        for (int i = 0; i < io_size; i++) {
-            GPIOHandler::initOutput(io_pins[i].pin);
-            GPIOHandler::set(io_pins[i].pin, 0);
-        }
+    int io_size = sizeof(io_pins) / sizeof(io_pins[0]);
+
+    for (int i = 0; i < io_size; i++) {
+        GPIOHandler::initOutput(io_pins[i].pin);
+        GPIOHandler::set(io_pins[i].pin, 0);
+    }
 #endif
 
 #ifdef TEST_MOSFETS
-        int mos_size = sizeof(mosfet_pins) / sizeof(mosfet_pins[0]);
-        for (int i = 0; i < mos_size; i++) {
-            GPIOHandler::initOutput(mosfet_pins[i].pin);
-            GPIOHandler::set(mosfet_pins[i].pin, 0);
-        }
+    int mos_size = sizeof(mosfet_pins) / sizeof(mosfet_pins[0]);
+
+    for (int i = 0; i < mos_size; i++) {
+        GPIOHandler::initOutput(mosfet_pins[i].pin);
+        GPIOHandler::set(mosfet_pins[i].pin, 0);
+    }
 #endif
 
 #ifdef TEST_MOTOR1
-        int m1_size = sizeof(motor1_pins) / sizeof(motor1_pins[0]);
-        for (int i = 0; i < m1_size; i++) {
-            GPIOHandler::initOutput(motor1_pins[i].pin);
-            GPIOHandler::set(motor1_pins[i].pin, 0);
-        }
+    int m1_size = sizeof(motor1_pins) / sizeof(motor1_pins[0]);
+
+    for (int i = 0; i < m1_size; i++) {
+        GPIOHandler::initOutput(motor1_pins[i].pin);
+        GPIOHandler::set(motor1_pins[i].pin, 0);
+    }
+#endif
+
+#ifdef TEST_MOTOR2
+    int m2_size = sizeof(motor2_pins) / sizeof(motor2_pins[0]);
+
+    for (int i = 0; i < m2_size; i++) {
+        GPIOHandler::initOutput(motor2_pins[i].pin);
+        GPIOHandler::set(motor2_pins[i].pin, 0);
+    }
 #endif
 
 #ifdef TEST_SENSORS
-        int s_size = sizeof(sensor_pins) / sizeof(sensor_pins[0]);
+    int s_size = sizeof(sensor_pins) / sizeof(sensor_pins[0]);
 
-        for (int i = 0; i < s_size; i++) {
+    for (int i = 0; i < s_size; i++) {
 
-            gpio_config_t cfg = {};
-            cfg.pin_bit_mask = (1ULL << sensor_pins[i].pin);
-            cfg.mode = GPIO_MODE_INPUT;
-            cfg.pull_up_en = GPIO_PULLUP_DISABLE;
-            cfg.pull_down_en = GPIO_PULLDOWN_DISABLE;
-            cfg.intr_type = GPIO_INTR_DISABLE;
+        gpio_config_t cfg = {};
 
-            gpio_config(&cfg);
-        }
+        cfg.pin_bit_mask = (1ULL << sensor_pins[i].pin);
+        cfg.mode = GPIO_MODE_INPUT;
+        cfg.pull_up_en = GPIO_PULLUP_DISABLE;
+        cfg.pull_down_en = GPIO_PULLDOWN_DISABLE;
+        cfg.intr_type = GPIO_INTR_DISABLE;
+
+        gpio_config(&cfg);
+    }
 #endif
 
-        /*
-        =====================
-        TEST LOOP
-        =====================
-        */
+#ifdef TEST_DRV8825_MOTOR2
+
+    ESP_LOGI(TAG, "Initializing DRV8825 Motor 2");
+
+    DRV8825_Init(&motor2);
+
+    DRV8825_Enable(&motor2);
+
+    DRV8825_Set_Step_Mode(
+        &motor2,
+        DRV8825_FULL_STEP
+    );
+
+#endif
+
+    /*
+    ====================================================
+    MAIN TEST LOOP
+    ====================================================
+    */
+    while (1) {
 
 #ifdef TEST_IO_PINS
+
         for (int i = 0; i < io_size; i++) {
 
             clear_all(io_pins, io_size);
+
             GPIOHandler::set(io_pins[i].pin, 1);
 
-            ESP_LOGI(TAG, "IO ACTIVE: %s (%d)",
+            ESP_LOGI(TAG,
+                     "IO ACTIVE: %s (%d)",
                      io_pins[i].name,
                      io_pins[i].pin);
 
             vTaskDelay(pdMS_TO_TICKS(5000));
         }
+
 #endif
 
 #ifdef TEST_MOSFETS
+
         for (int i = 0; i < mos_size; i++) {
 
             clear_all(mosfet_pins, mos_size);
+
             GPIOHandler::set(mosfet_pins[i].pin, 1);
 
-            ESP_LOGI(TAG, "MOSFET ACTIVE: %s (%d)",
+            ESP_LOGI(TAG,
+                     "MOSFET ACTIVE: %s (%d)",
                      mosfet_pins[i].name,
                      mosfet_pins[i].pin);
 
             vTaskDelay(pdMS_TO_TICKS(5000));
         }
+
 #endif
 
 #ifdef TEST_MOTOR1
+
         for (int i = 0; i < m1_size; i++) {
 
             clear_all(motor1_pins, m1_size);
+
             GPIOHandler::set(motor1_pins[i].pin, 1);
 
-            ESP_LOGI(TAG, "MOTOR1 ACTIVE: %s (%d)",
+            ESP_LOGI(TAG,
+                     "MOTOR1 ACTIVE: %s (%d)",
                      motor1_pins[i].name,
                      motor1_pins[i].pin);
 
             vTaskDelay(pdMS_TO_TICKS(5000));
         }
+
+#endif
+
+#ifdef TEST_MOTOR2
+
+        for (int i = 0; i < m2_size; i++) {
+
+            clear_all(motor2_pins, m2_size);
+
+            GPIOHandler::set(motor2_pins[i].pin, 1);
+
+            ESP_LOGI(TAG,
+                     "MOTOR2 ACTIVE: %s (%d)",
+                     motor2_pins[i].name,
+                     motor2_pins[i].pin);
+
+            vTaskDelay(pdMS_TO_TICKS(3000));
+        }
+
 #endif
 
 #ifdef TEST_SENSORS
+
         for (int i = 0; i < s_size; i++) {
 
             int val = gpio_get_level(sensor_pins[i].pin);
 
-            ESP_LOGI(TAG, "SENSOR READ: %s (%d) = %d",
+            ESP_LOGI(TAG,
+                     "SENSOR READ: %s (%d) = %d",
                      sensor_pins[i].name,
                      sensor_pins[i].pin,
                      val);
 
             vTaskDelay(pdMS_TO_TICKS(1000));
         }
+
+#endif
+
+#ifdef TEST_DRV8825_MOTOR2
+
+        ESP_LOGI(TAG, "Motor 2 FORWARD");
+
+        DRV8825_Move(
+            &motor2,
+            200,
+            DRV8825_FORWARD,
+            10000
+        );
+
+        vTaskDelay(pdMS_TO_TICKS(2000));
+        ESP_LOGI(TAG, "Motor 2 Backwards");
+
+        DRV8825_Move(
+            &motor2,
+            200,
+            DRV8825_BACKWARD,
+            10000
+        );
+
+        vTaskDelay(pdMS_TO_TICKS(2000));
+
 #endif
 
     }

@@ -75,10 +75,10 @@ void DRV8825_Set_Direction(DRV8825_t *motor, int direction)
 void DRV8825_Step(DRV8825_t *motor)
 {
     gpio_set_level(motor->step_pin, 1);
-    esp_rom_delay_us(2);
+    esp_rom_delay_us(20);
 
     gpio_set_level(motor->step_pin, 0);
-    esp_rom_delay_us(2);
+    esp_rom_delay_us(20);
 }
 
 void DRV8825_Step_N(DRV8825_t *motor, int steps, int delay_us)
