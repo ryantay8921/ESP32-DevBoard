@@ -3,4 +3,8 @@
   (lib (name "Connector_4")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person")(options "")(descr ""))
   (lib (name "switch")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person")(options "")(descr ""))
   (lib (name "usb")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/New folder")(options "")(descr ""))
+  (lib (name "connector_4_vert")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/B4B_PH_K_S/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "connector_3_vert")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/B3B_PH_K_S_LF__SN_/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "connector_2_vert")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/B2B_PH_K_S")(options "")(descr ""))
+  (lib (name "connector_6_vert")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/B6B_PH_K_S")(options "")(descr ""))
 )
