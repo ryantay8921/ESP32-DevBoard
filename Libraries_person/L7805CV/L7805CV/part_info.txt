@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=L7805CV
+PartCategory=Integrated Circuit
+PackageCategory=Transistor Outline, Vertical
+PinCount=3
+Version=4.2
+Released=2015-07-22 14:47:07
+Downloaded=2026-07-18 00:32:25
+3D=Y

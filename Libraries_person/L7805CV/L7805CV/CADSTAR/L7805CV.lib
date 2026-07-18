@@ -1,0 +1,18 @@
+.L7805CV :1 ;Linear voltage regulator,L7805CV 5V 1.5A STMicroelectronics L7805CV, Single Linear Voltage Regulator, 1.5A 5 V, 3-Pin TO-220
+TO255P460X1020X2008-3P
+*STM IC
+*NGS
+*PLB 1="INPUT" 2="GROUND" 3="OUTPUT"
+*MXP 3
+*DFN L7805CV
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (L7805CV)
+~!Mouser Part Number (511-L7805CV)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L7805CV?qs=9NrABl3fj%2FqplZAHiYUxWg%3D%3D)
+~!Arrow Part Number (L7805CV)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/l7805cv/stmicroelectronics.html?utm_currency=USD&region=europe)
+~!Link Datasheet (https://www.st.com/resource/en/datasheet/l78.pdf)
+~!Height (4.6mm)
+~!3D_Model (L7805CV)
+L7805CV
+1.1!U 2.1!U 3.1!U 

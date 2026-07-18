@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'L7805CV'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT", "TJ", "MTBF", "POWER", "SLOPE", "SUBTYPE", "PACKAGE", "RJA", "IPEAK", "VCC_MAX", "VCC_MIN", "IOUT_MAX", "IOUT_MIN", "ICC", "IGND", "RCA", "RJC", "ICCQ", "TECHNOLOGY", "ISHORT";
+{========================================================================================}
+ "STMicroelectronics", "L7805CV" (!) = "", "TO255P460X1020X2008-3P", "Transistor Outline, Vertical", "511-L7805CV", "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L7805CV?qs=9NrABl3fj%2FqplZAHiYUxWg%3D%3D", "L7805CV", "https://www.arrow.com/en/products/l7805cv/stmicroelectronics.html?utm_currency=USD&region=europe", "Linear voltage regulator,L7805CV 5V 1.5A STMicroelectronics L7805CV, Single Linear Voltage Regulator, 1.5A 5 V, 3-Pin TO-220", "https://www.st.com/resource/en/datasheet/l78.pdf", "4.6 mm", "125", "", "", "", "VOLTAGE REGULATOR THROUGH HOLE", "TO-220", "50", "2.2", "35", "", "1.5", "", "", "", "", "5", "8m", "BIPOLAR", "0.75"
+END_PART
+
+END.

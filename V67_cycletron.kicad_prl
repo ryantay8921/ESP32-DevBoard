@@ -6,7 +6,7 @@
     "hidden_netclasses": [],
     "hidden_nets": [
       "GND",
-      "+12V"
+      "+24V"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -52,7 +52,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_55555555_57555527",
+    "visible_layers": "00000000_00000000_55555555_575755a7",
     "zone_display_mode": 0
   },
   "git": {

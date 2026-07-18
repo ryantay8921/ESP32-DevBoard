@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "L7805CV"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2025-02-03-17:57:39)
+    (mountForm default
+        (footprintRef "TO255P460X1020X2008-3P")
+        (spec "System")
+    )
+)

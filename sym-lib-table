@@ -4,4 +4,5 @@
   (lib (name "Connector_2")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/2026-04-05_06-04-00.kicad_sym")(options "")(descr ""))
   (lib (name "Switch")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/TS-1088-AR02016.kicad_sym")(options "")(descr ""))
   (lib (name "usb_c")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/USB4085-GF-A_REVA4.kicad_sym")(options "")(descr ""))
+  (lib (name "reg_5")(type "KiCad")(uri "${KIPRJMOD}/Libraries_person/L7805ABD2T_TR/KiCADv6/2026-07-18_23-15-32.kicad_sym")(options "")(descr ""))
 )
