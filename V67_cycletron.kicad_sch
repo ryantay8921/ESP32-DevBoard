@@ -11051,8 +11051,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2722467f-96aa-463b-8228-eb8f1dd47ed5")
-		(property "Reference" "hall_cap1"
-			(at 213.868 32.004 90)
+		(property "Reference" "hall2"
+			(at 211.328 32.004 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11114,7 +11114,7 @@
 		(instances
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "hall_cap1")
+					(reference "hall2")
 					(unit 1)
 				)
 			)
@@ -12251,7 +12251,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4cf145f4-8c31-4231-98b4-a4c26948bf6f")
-		(property "Reference" "HBridge1"
+		(property "Reference" "hb1"
 			(at 165.862 13.208 90)
 			(effects
 				(font
@@ -12328,7 +12328,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "HBridge1")
+					(reference "hb1")
 					(unit 1)
 				)
 			)
@@ -17919,7 +17919,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ed827008-9419-4cce-9724-6595a714520a")
-		(property "Reference" "HBridge2"
+		(property "Reference" "hb2"
 			(at 184.658 13.462 90)
 			(effects
 				(font
@@ -17984,7 +17984,7 @@
 		(instances
 			(project ""
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "HBridge2")
+					(reference "hb2")
 					(unit 1)
 				)
 			)
