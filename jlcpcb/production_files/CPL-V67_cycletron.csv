@@ -17,8 +17,8 @@ I2C1,MCP9600,CONN4_B4B-PH_JST,146.089,-104.5718,-90.0,top
 Input1,B2B-PH-K-S,JST_B2B-PH-K-S,81.804,-74.422,180.0,top
 J1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_HRO_TYPE-C-31-M-12,98.866,-77.998,0.0,top
 Mos1,B2B-PH-K-S,JST_B2B-PH-K-S,81.7024,-113.9444,0.0,top
-Motor1,Motor1,CONN4_B4B-PH_JST,42.3164,-106.982001,90.0,top
-Motor2,Motor2,CONN4_B4B-PH_JST,42.3672,-90.472001,90.0,top
+Motor1,Motor1,CONN4_B4B-PH_JST,39.116,-105.615999,90.0,top
+Motor2,Motor2,CONN4_B4B-PH_JST,39.37,-89.613999,90.0,top
 R1,5.1k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,96.186,-82.988,180.0,top
 R2,5.1k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,107.6612,-83.3628,0.0,top
 R3,1k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,110.22,-80.264,180.0,top
@@ -38,8 +38,8 @@ hb2,B2B-PH-K-S,JST_B2B-PH-K-S,118.38,-114.3,0.0,top
 mccap1,100nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,116.848,-80.909,90.0,top
 mccap2,22uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,113.8,-81.0,90.0,top
 mosfet4,HD2305,SOT-23,85.344,-107.696,90.0,top
-motorc1,100uF,CP_Elec_6.3x5.4,50.546,-107.956,-90.0,top
-motorc2,100uF,CP_Elec_6.3x5.4,50.292,-90.176,-90.0,top
+motorc1,100uF,CP_Elec_6.3x5.4,49.022,-107.442,-90.0,top
+motorc2,100uF,CP_Elec_6.3x5.4,49.022,-90.164,-90.0,top
 tr3,1k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,89.408,-108.966,-90.0,top
 vd_c1,2.2uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,103.886,-104.902,90.0,top
 vd_c2,0.01uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,94.488,-108.458,180.0,top
