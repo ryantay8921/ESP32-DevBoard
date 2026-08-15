@@ -1,14 +1,14 @@
-### Missing 3D models - created on 2026-08-14 17:35
+### Missing 3D models - created on 2026-08-14 23:39
 ### Printed by checking_3D_models plugin
 Board file: C:\Users\ryant\OneDrive\Main\projects\ESP32-DevBoard\V67_cycletron.kicad_pcb
 3D missing models written to:
 C:\Users\ryant\OneDrive\Main\projects\ESP32-DevBoard\V67_cycletron_missing3Dmodels.txt
 -------
-('Rails1', '${KICAD9_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_MaiXu_MX126-5.0-06P_1x06_P5.00mm.wrl')
-('Motor_2', '${KICAD9_3DMODEL_DIR}/Module.3dshapes/Pololu_Breakout-16_15.2x20.3mm.wrl')
+('J1', 'C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_USB.3dshapes\\USB_C_Receptacle_HRO_TYPE-C-31-M-12.step')
+('Motor_2', 'C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Module.3dshapes\\Pololu_Breakout-16_15.2x20.3mm.step')
 ('U3', 'C:\\Users\\ryant\\OneDrive\\Main\\projects\\ESP32-DevBoard\\L7805CV.stp')
-('J1', '${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl')
-('Motor_1', '${KICAD9_3DMODEL_DIR}/Module.3dshapes/Pololu_Breakout-16_15.2x20.3mm.wrl')
+('Rails1', 'C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\TerminalBlock.3dshapes\\TerminalBlock_MaiXu_MX126-5.0-06P_1x06_P5.00mm.step')
+('Motor_1', 'C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Module.3dshapes\\Pololu_Breakout-16_15.2x20.3mm.step')
 -------
 NUM of 3D missing models:5
 checked extensions ['.stp', '.step', '.stpZ']
