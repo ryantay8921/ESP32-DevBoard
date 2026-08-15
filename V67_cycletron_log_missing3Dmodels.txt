@@ -1,0 +1,9 @@
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_MaiXu_MX126-5.0-06P_1x06_P5.00mm.wrl
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Module.3dshapes/Pololu_Breakout-16_15.2x20.3mm.wrl
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
+Can not find model defined with enviroment variable:
+${KICAD9_3DMODEL_DIR}/Module.3dshapes/Pololu_Breakout-16_15.2x20.3mm.wrl
+[('Rails1', '${KICAD9_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_MaiXu_MX126-5.0-06P_1x06_P5.00mm.wrl'), ('Motor_2', '${KICAD9_3DMODEL_DIR}/Module.3dshapes/Pololu_Breakout-16_15.2x20.3mm.wrl'), ('U3', 'C:\\Users\\ryant\\OneDrive\\Main\\projects\\ESP32-DevBoard\\L7805CV.stp'), ('J1', '${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl'), ('Motor_1', '${KICAD9_3DMODEL_DIR}/Module.3dshapes/Pololu_Breakout-16_15.2x20.3mm.wrl')]

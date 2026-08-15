@@ -1,0 +1,11 @@
+# Flash size confirmed real (bootloader reads 16MB directly off the chip's
+# JEDEC ID at boot). PSRAM is currently DISABLED - the board hard-faults
+# at boot with "PSRAM ID read error: 0x00000000, PSRAM chip not found"
+# when CONFIG_SPIRAM_BOOT_INIT is on and PSRAM doesn't answer, which
+# bricks every boot regardless of what the app code needs. Confirm the
+# real module SKU (text printed on the WROOM-1 module's metal shield)
+# before re-enabling CONFIG_SPIRAM=y / CONFIG_SPIRAM_MODE_OCT=y.
+# Only consulted when sdkconfig.esp32-s3-devkitc-1 doesn't exist yet -
+# delete that file to force a fresh regen against these defaults.
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP_LARGE=y

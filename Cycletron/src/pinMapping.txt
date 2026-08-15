@@ -1,46 +1,63 @@
 /*
 PIN DEFINITIONS (easy recall names)
+Source: V67_cycletron schematic, U4 ESP32-S3-WROOM-1
+Updated 2026-08-08
 */
 
-// General IO
-#define IO4   GPIO_NUM_4
-#define IO5   GPIO_NUM_5
-#define IO6   GPIO_NUM_6
-#define IO7   GPIO_NUM_7
-#define IO8   GPIO_NUM_15
-#define IO9   GPIO_NUM_16
-#define IO10  GPIO_NUM_17
-#define IO11  GPIO_NUM_18
-#define IO12  GPIO_NUM_8
-#define IO15  GPIO_NUM_3
-#define IO16  GPIO_NUM_46
-#define IO17  GPIO_NUM_9
-#define IO18  GPIO_NUM_10
-#define IO19  GPIO_NUM_11
-#define IO20  GPIO_NUM_12
+// Strapping / boot
+#define PIN_BOOT        GPIO_NUM_0    // BOOT button (strapping pin, must be high at reset)
 
+// Spare / unlabeled IO broken out on schematic
+#define PIN_IO1         GPIO_NUM_1
+#define PIN_IO2         GPIO_NUM_2
 
-#define THERMISTOR_MINUS GPIO_NUM_21
+// Motor 1 (Pololu DRV8825 breakout)
+#define M1_M0           GPIO_NUM_3
+#define M1_EN           GPIO_NUM_8
+#define M1_M2           GPIO_NUM_9
+#define M1_STEP         GPIO_NUM_10
+#define M1_DIR          GPIO_NUM_11
+#define M1_FLT          GPIO_NUM_18
+#define M1_M1           GPIO_NUM_46   // WARNING: GPIO46 is INPUT-ONLY on ESP32-S3 - cannot drive as output, see note below
 
-// MOSFETs
-#define MOSFET_1 GPIO_NUM_14
-#define MOSFET_2 GPIO_NUM_21
-#define MOSFET_3 GPIO_NUM_47
+// Motor 2 (Pololu DRV8825 breakout)
+#define M2_FLT          GPIO_NUM_4
+#define M2_EN           GPIO_NUM_5
+#define M2_M0           GPIO_NUM_6
+#define M2_M1           GPIO_NUM_7
+#define M2_M2           GPIO_NUM_15
+#define M2_STEP         GPIO_NUM_16
+#define M2_DIR          GPIO_NUM_17
 
-// Motor 1
-#define M1_FLT   GPIO_NUM_48
-#define M1_EN    GPIO_NUM_45
-#define M1_M0    GPIO_NUM_35
-#define M1_M1    GPIO_NUM_36
-#define M1_M2    GPIO_NUM_37
-#define M1_STEP  GPIO_NUM_38
-#define M1_DIR   GPIO_NUM_39
+// Mosfet driver (Mos1 HD2305)
+#define MOSFET1_I       GPIO_NUM_12
 
-// Motor 2
-#define M2_FLT   PIN34 GPIO_NUM_41
-#define M2_EN    PIN33 GPIO_NUM_40
-#define M2_M0    PIN35 GPIO_NUM_42
-#define M2_M1    PIN36 GPIO_NUM_43
-#define M2_M2    PIN37 GPIO_NUM_44
-#define M2_STEP  PIN38 GPIO_NUM_2
-#define M2_DIR   PIN39 GPIO_NUM_1
+// Thermistor voltage divider / L_EN
+#define VD_O            GPIO_NUM_13
+#define L_EN            GPIO_NUM_14
+
+// USB (native USB peripheral - dedicated pins, not general GPIO)
+#define USB_DM          GPIO_NUM_19
+#define USB_DP          GPIO_NUM_20
+
+// Misc enable
+#define R_EN            GPIO_NUM_21
+
+// Fan control (Fan1 PC_Fan)
+#define FAN_EN_O        GPIO_NUM_35   // NOTE: shared with module's PSRAM bracket, confirm this WROOM-1 variant has no PSRAM in use
+#define FAN_TACH_I      GPIO_NUM_36   // NOTE: shared with module's PSRAM bracket
+#define PIN_IO37        GPIO_NUM_37   // spare, PSRAM bracket
+#define PIN_IO38        GPIO_NUM_38   // spare
+#define PIN_IO39        GPIO_NUM_39   // spare
+#define PIN_IO40        GPIO_NUM_40   // spare
+
+// I2C (MCP9600 thermocouple amp)
+#define I2C_SCL         GPIO_NUM_41
+#define I2C_SDA         GPIO_NUM_42
+
+// Sensors
+#define HALL_I          GPIO_NUM_45   // NOTE: strapping pin (VDD_SPI voltage select), sampled at reset
+
+// H-bridge fan PWM
+#define LPWM            GPIO_NUM_47
+#define RPWM            GPIO_NUM_48
