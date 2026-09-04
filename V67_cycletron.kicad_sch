@@ -3246,236 +3246,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_SL_Pin_Headers:PINHD_2x2_Male"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at -1.27 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PINHD_2x2_Male"
-				(at -1.27 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -1.27 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Pin Header male with pin space 2.54mm. Pin Count -4"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Pin Header"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "PinHeader_2x02_P2.54mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PINHD_2x2_Male_0_1"
-				(rectangle
-					(start -2.54 2.54)
-					(end 2.54 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.5)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.3)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.5)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.5)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 2.54 -1.27)
-					)
-					(stroke
-						(width 0.5)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "PINHD_2x2_Male_1_1"
-				(pin passive line
-					(at -5.08 1.27 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 1.27 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -1.27 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -1.27 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_SL_Pin_Headers:PINHD_2x4_Male"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6441,10 +6211,6 @@
 		(at 30.48 53.34)
 		(uuid "9937c39f-2e46-4896-a8e8-b38fc16f0fb4")
 	)
-	(no_connect
-		(at 127 177.8)
-		(uuid "cb3ec46e-f91d-4fdd-a45f-0bba43099c85")
-	)
 	(wire
 		(pts
 			(xy 210.82 30.48) (xy 210.82 25.4)
@@ -6617,16 +6383,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 142.24) (xy 127 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27496ebf-89b6-4e36-8d9b-a9debb30d344")
-	)
-	(wire
-		(pts
 			(xy 251.46 152.4) (xy 252.73 152.4)
 		)
 		(stroke
@@ -6634,16 +6390,6 @@
 			(type default)
 		)
 		(uuid "2b63d75b-f56c-40d8-8474-60eea0b2d78c")
-	)
-	(wire
-		(pts
-			(xy 135.89 139.7) (xy 127 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b84299e-b565-4265-a547-d69f774e0069")
 	)
 	(wire
 		(pts
@@ -6947,16 +6693,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 147.32) (xy 96.52 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8639ce8a-2a9c-443e-88f6-7d188f59e6e8")
-	)
-	(wire
-		(pts
 			(xy 45.72 146.05) (xy 44.45 146.05)
 		)
 		(stroke
@@ -7084,16 +6820,6 @@
 			(type default)
 		)
 		(uuid "a3f3a8f8-c5a9-4ab8-948b-628dd5427bd3")
-	)
-	(wire
-		(pts
-			(xy 87.63 149.86) (xy 96.52 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5619cd0-1c11-49cf-bfc2-abc0d08cea4a")
 	)
 	(wire
 		(pts
@@ -7637,54 +7363,6 @@
 			)
 		)
 	)
-	(global_label "FAN_En_o"
-		(shape input)
-		(at 127 167.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "13c5cfd5-6ff3-49c2-9ca2-ac674756899e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 138.8751 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "LPWM"
-		(shape input)
-		(at 127 157.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "154ff139-64be-4486-aaaa-d3341caedf8b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.1861 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "Motor2_A2"
 		(shape input)
 		(at 121.92 24.13 270)
@@ -7722,6 +7400,30 @@
 		(uuid "1af818cf-08bb-4de7-b483-ab5194d34ec4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 136.3956 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "FAN_Tach_i"
+		(shape input)
+		(at 127 165.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1b0bfe2f-e5f9-4f5f-a5ed-2a020bfbc7b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 140.3871 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7925,6 +7627,30 @@
 			)
 		)
 	)
+	(global_label "Hall_i"
+		(shape input)
+		(at 96.52 149.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "34b6e045-9f53-42bd-9cec-c3e197746b1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1525 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "Motor2_DIR"
 		(shape input)
 		(at 127 144.78 0)
@@ -8021,30 +7747,6 @@
 			)
 		)
 	)
-	(global_label "IO1"
-		(shape input)
-		(at 60.96 189.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3b93e100-4fe9-4bd8-a929-ae1c60ed32a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.83 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "Motor1_M2"
 		(shape input)
 		(at 96.52 167.64 180)
@@ -8071,17 +7773,17 @@
 	)
 	(global_label "TX"
 		(shape input)
-		(at 71.12 189.23 0)
+		(at 53.34 182.88 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "3f4b5be1-dabf-4059-a0f8-638eb9c8bc89")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2823 189.23 0)
+			(at 53.34 188.0423 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8089,7 +7791,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -8431,7 +8133,7 @@
 	)
 	(global_label "RX"
 		(shape input)
-		(at 135.89 142.24 0)
+		(at 127 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8441,7 +8143,7 @@
 		)
 		(uuid "68fe1d5d-2f70-4a3b-b155-846d6bc3c4c1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.3547 142.24 0)
+			(at 132.4647 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8525,30 +8227,6 @@
 			)
 		)
 	)
-	(global_label "IO2"
-		(shape input)
-		(at 60.96 186.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "73cf1954-e231-42e5-bdf7-fe1ed0311407")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.83 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "Motor2_EN"
 		(shape input)
 		(at 241.3 132.08 180)
@@ -8621,6 +8299,54 @@
 			)
 		)
 	)
+	(global_label "FAN_En_o"
+		(shape input)
+		(at 127 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c8fa88b-d1a9-42f5-a53b-57f8f9349e66")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.8751 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "LPWM"
+		(shape input)
+		(at 127 177.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "820541ac-ee5f-4ab8-bd33-7306ce8468a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.1861 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "Motor1_STEP"
 		(shape input)
 		(at 96.52 170.18 180)
@@ -8669,30 +8395,6 @@
 			)
 		)
 	)
-	(global_label "VD_o"
-		(shape input)
-		(at 127 162.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "87fd4830-53cc-4865-91cf-33ee64cecab9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.4604 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "D+"
 		(shape input)
 		(at 127 152.4 0)
@@ -8714,6 +8416,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "VD_o"
+		(shape input)
+		(at 96.52 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8b93514e-ed8a-41bd-b2e5-7807abb4eae8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.0596 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -8791,7 +8517,7 @@
 	)
 	(global_label "TX"
 		(shape input)
-		(at 135.89 139.7 0)
+		(at 127 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8801,7 +8527,7 @@
 		)
 		(uuid "9d27d768-9df4-469b-996d-0ca332a8d79c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.0523 139.7 0)
+			(at 132.1623 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9031,17 +8757,17 @@
 	)
 	(global_label "RX"
 		(shape input)
-		(at 71.12 186.69 0)
+		(at 55.88 182.88 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "c697bf17-37db-4038-a3d8-aad33b757f2b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.5847 186.69 0)
+			(at 55.88 188.3447 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9049,7 +8775,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -9066,30 +8792,6 @@
 		(uuid "cdb83673-868d-44b4-b293-5a1d7e7ff21d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 24.3502 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "IO1"
-		(shape input)
-		(at 87.63 147.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ce6d1788-aeee-4529-9841-192bd19f9def")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.5 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9461,78 +9163,6 @@
 			)
 		)
 	)
-	(global_label "IO2"
-		(shape input)
-		(at 87.63 149.86 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ec70fb56-aa8e-46c6-8b2d-5bad31b3d9fd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.5 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "FAN_Tach_i"
-		(shape input)
-		(at 127 165.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ed697a9f-76a2-4798-86b1-2cd23979e1ba")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.3871 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "Hall_i"
-		(shape input)
-		(at 127 160.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f1f9a5e8-ae7a-4519-97d2-09e9b098dc98")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.3675 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "L_EN"
 		(shape input)
 		(at 185.42 33.02 270)
@@ -9733,6 +9363,27 @@
 		)
 		(property "Description" "Pin Header male with pin space 2.54mm. Pin Count -4"
 			(at 109.22 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cycletron" ""
+			(at 109.22 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5116483"
+			(at 109.22 20.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11497,6 +11148,27 @@
 				)
 			)
 		)
+		(property "Cycletron" ""
+			(at 210.82 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5360899"
+			(at 210.82 21.59 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4e51fa51-c149-440c-bbc0-7a12fff83d5e")
 		)
@@ -12628,6 +12300,27 @@
 				)
 			)
 		)
+		(property "Cycletron" ""
+			(at 140.97 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5116483"
+			(at 140.97 20.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "656cee3b-8961-4d3a-85a6-da681280c52e")
 		)
@@ -12920,6 +12613,27 @@
 		)
 		(property "Description" "Pin Header male with pin space 2.54mm. Pin Count -2"
 			(at 231.14 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cycletron" ""
+			(at 231.14 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5360898"
+			(at 231.14 19.05 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14657,6 +14371,27 @@
 				)
 			)
 		)
+		(property "Cycletron" ""
+			(at 156.21 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5116483"
+			(at 156.21 20.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "7dc1bd59-6f80-4678-b171-3e868638917e")
 		)
@@ -15135,6 +14870,27 @@
 			)
 		)
 		(property "Description" "Pin Header male with pin space 2.54mm. Pin Count -2"
+			(at 203.2 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cycletron" ""
+			(at 203.2 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5360898"
 			(at 203.2 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -15996,6 +15752,27 @@
 		)
 		(property "Description" "Pin Header male with pin space 2.54mm. Pin Count -8"
 			(at 184.15 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cycletron" ""
+			(at 184.15 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5156679"
+			(at 184.15 27.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17250,6 +17027,27 @@
 				)
 			)
 		)
+		(property "Cycletron" ""
+			(at 240.03 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5360898"
+			(at 240.03 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a22a92ac-fa3d-4e65-8fd3-804bbfb918fb")
 		)
@@ -18055,6 +17853,27 @@
 				)
 			)
 		)
+		(property "Cycletron" ""
+			(at 125.73 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5116483"
+			(at 125.73 20.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "a662b4ba-d077-4c3e-8c00-f37023d47356")
 		)
@@ -18410,92 +18229,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_SL_Pin_Headers:PINHD_2x2_Male")
-		(at 66.04 187.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f58f837d-1a14-490b-8d0a-8eb16fd89cec")
-		(property "Reference" "J13"
-			(at 66.04 180.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PINHD_2x2_Male"
-			(at 66.04 182.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
-			(at 66.04 191.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Pin Header male with pin space 2.54mm. Pin Count -4"
-			(at 66.04 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "bbdcf906-bfc6-4c2e-9c7b-1481627c9f21")
-		)
-		(pin "3"
-			(uuid "058389f4-b9c8-4198-af6a-5df1b4c7a2ce")
-		)
-		(pin "1"
-			(uuid "168698fb-b216-44e1-8dee-9cf211d01d43")
-		)
-		(pin "4"
-			(uuid "c1735d81-c6ce-4cf1-bedc-3d7b9bb77a44")
-		)
-		(instances
-			(project "V67_cycletron"
-				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 152.4 44.45 180)
 		(unit 1)
@@ -18646,6 +18379,106 @@
 			(project "V67_cycletron"
 				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
 					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Pin_Headers:PINHD_1x2_Male")
+		(at 54.61 179.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa7db5d6-d880-40f3-ae27-ac7bb228076a")
+		(property "Reference" "J12"
+			(at 54.61 173.228 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PINHD_1x2_Male"
+			(at 55.118 175.768 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 58.42 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Pin Header male with pin space 2.54mm. Pin Count -2"
+			(at 54.61 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Cycletron" ""
+			(at 54.61 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5360898"
+			(at 54.61 179.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a027a0c1-365b-4b20-b17f-b97c048e35a2")
+		)
+		(pin "2"
+			(uuid "ad5d61e9-4c11-4cbe-9e17-933b483d9189")
+		)
+		(instances
+			(project "V67_cycletron"
+				(path "/490d8b32-3aea-4f11-93e7-a546853a1b13"
+					(reference "J12")
 					(unit 1)
 				)
 			)
