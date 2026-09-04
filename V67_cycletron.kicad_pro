@@ -502,7 +502,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -756,7 +756,13 @@
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
-      "field_names": [],
+      "field_names": [
+        {
+          "name": "Cycletron",
+          "url": false,
+          "visible": true
+        }
+      ],
       "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -795,16 +801,16 @@
       {
         "filename": "V67_cycletron.kicad_sch",
         "name": "V67_cycletron",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "490d8b32-3aea-4f11-93e7-a546853a1b13"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR39,#PWR44,#PWR49,#PWR71,mosfet4,J2-13,Q1",
     "variants": []
   },
   "sheets": [
     [
       "490d8b32-3aea-4f11-93e7-a546853a1b13",
-      "Root"
+      "V67_cycletron"
     ]
   ],
   "text_variables": {},

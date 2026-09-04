@@ -23,9 +23,17 @@ FEATURE FLAGS
 // #define TEST_MOTOR1
 // #define TEST_MOTOR2
 // #define TEST_SENSORS
-// #define TEST_DRV8825_MOTOR1
+#define TEST_DRV8825_MOTOR1
 // #define TEST_DRV8825_MOTOR2
 #define TEST_WIFI
+
+// Serves a page with FORWARD / STOP / BACKWARD buttons for motor 1.
+// Requires TEST_WIFI + TEST_DRV8825_MOTOR1 both defined above.
+#define MOTOR1_WEB_CONTROL
+
+#if defined(MOTOR1_WEB_CONTROL) && !(defined(TEST_WIFI) && defined(TEST_DRV8825_MOTOR1))
+#error "MOTOR1_WEB_CONTROL requires both TEST_WIFI and TEST_DRV8825_MOTOR1 to be defined"
+#endif
 
 #ifdef TEST_WIFI
 #include <string.h>
@@ -315,6 +323,170 @@ static DRV8825_t motor2 = {
 
 /*
 ====================================================
+MOTOR 1 WEB CONTROL
+Serves a small page with FORWARD / STOP / BACKWARD
+buttons. A dedicated task steps the motor continuously
+while a direction is selected, checking the requested
+state every ~50 steps so button presses stay responsive.
+====================================================
+*/
+#if defined(TEST_WIFI) && defined(TEST_DRV8825_MOTOR1) && defined(MOTOR1_WEB_CONTROL)
+
+#include <atomic>
+#include "esp_http_server.h"
+
+#define MOTOR1_WEB_STEP_DELAY_US 1500 // time between steps -> controls speed
+#define MOTOR1_WEB_STEP_BATCH    50   // steps taken before re-checking button state
+
+enum Motor1State {
+    MOTOR1_STOP     = 0,
+    MOTOR1_FORWARD  = 1,
+    MOTOR1_BACKWARD = 2,
+};
+
+static std::atomic<int> s_motor1_state{MOTOR1_STOP};
+
+static void motor1_control_task(void *arg)
+{
+    int last_state = MOTOR1_STOP;
+    bool driver_enabled = false;
+
+    while (1) {
+        int state = s_motor1_state.load();
+
+        if (state == MOTOR1_STOP) {
+            if (driver_enabled) {
+                DRV8825_Disable(&motor1);
+                driver_enabled = false;
+                ESP_LOGI(TAG, "Motor 1: stopped");
+            }
+            vTaskDelay(pdMS_TO_TICKS(50));
+            continue;
+        }
+
+        if (!driver_enabled) {
+            DRV8825_Enable(&motor1);
+            driver_enabled = true;
+        }
+
+        if (state != last_state) {
+            DRV8825_Set_Direction(&motor1, state == MOTOR1_FORWARD ? DRV8825_FORWARD : DRV8825_BACKWARD);
+            ESP_LOGI(TAG, "Motor 1: %s", state == MOTOR1_FORWARD ? "FORWARD" : "BACKWARD");
+        }
+        last_state = state;
+
+        for (int i = 0; i < MOTOR1_WEB_STEP_BATCH && s_motor1_state.load() == state; i++) {
+            DRV8825_Step(&motor1);
+            esp_rom_delay_us(MOTOR1_WEB_STEP_DELAY_US);
+        }
+
+        // Yield so the idle task runs (task watchdog) and the HTTP server
+        // gets CPU time to service button presses while the motor spins.
+        vTaskDelay(1);
+    }
+}
+
+static esp_err_t motor1_forward_handler(httpd_req_t *req)
+{
+    s_motor1_state.store(MOTOR1_FORWARD);
+    httpd_resp_set_type(req, "text/plain");
+    httpd_resp_sendstr(req, "forward");
+    return ESP_OK;
+}
+
+static esp_err_t motor1_backward_handler(httpd_req_t *req)
+{
+    s_motor1_state.store(MOTOR1_BACKWARD);
+    httpd_resp_set_type(req, "text/plain");
+    httpd_resp_sendstr(req, "backward");
+    return ESP_OK;
+}
+
+static esp_err_t motor1_stop_handler(httpd_req_t *req)
+{
+    s_motor1_state.store(MOTOR1_STOP);
+    httpd_resp_set_type(req, "text/plain");
+    httpd_resp_sendstr(req, "stop");
+    return ESP_OK;
+}
+
+static esp_err_t motor1_status_handler(httpd_req_t *req)
+{
+    int state = s_motor1_state.load();
+    const char *txt = state == MOTOR1_FORWARD ? "forward" : state == MOTOR1_BACKWARD ? "backward" : "stop";
+    httpd_resp_set_type(req, "text/plain");
+    httpd_resp_sendstr(req, txt);
+    return ESP_OK;
+}
+
+static const char MOTOR1_PAGE[] = R"HTML(<!doctype html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cycletron - Motor 1</title>
+<style>
+  body { font-family: sans-serif; background:#111; color:#eee; text-align:center; padding:2rem; }
+  button { font-size:1.5rem; padding:1.2rem 2rem; margin:0.5rem; border:none; border-radius:12px; width:80%; max-width:320px; }
+  #fwd  { background:#2e7d32; color:#fff; }
+  #bwd  { background:#1565c0; color:#fff; }
+  #stop { background:#c62828; color:#fff; }
+  #status { margin-top:1.5rem; font-size:1.2rem; }
+</style>
+</head><body>
+  <h2>Motor 1 Control</h2>
+  <div><button id="fwd" onclick="cmd('forward')">FORWARD</button></div>
+  <div><button id="bwd" onclick="cmd('backward')">BACKWARD</button></div>
+  <div><button id="stop" onclick="cmd('stop')">STOP</button></div>
+  <div id="status">status: ...</div>
+  <script>
+    function cmd(c) { fetch('/motor/' + c).then(poll); }
+    function poll() {
+      fetch('/motor/status').then(r => r.text()).then(t => {
+        document.getElementById('status').innerText = 'status: ' + t;
+      });
+    }
+    setInterval(poll, 1000);
+    poll();
+  </script>
+</body></html>
+)HTML";
+
+static esp_err_t motor1_page_handler(httpd_req_t *req)
+{
+    httpd_resp_set_type(req, "text/html");
+    httpd_resp_send(req, MOTOR1_PAGE, HTTPD_RESP_USE_STRLEN);
+    return ESP_OK;
+}
+
+static httpd_handle_t start_motor1_webserver(void)
+{
+    httpd_handle_t server = NULL;
+    httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+    config.stack_size = 8192;
+
+    if (httpd_start(&server, &config) != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to start motor 1 web server");
+        return NULL;
+    }
+
+    static const httpd_uri_t root_uri   = { .uri = "/",               .method = HTTP_GET, .handler = motor1_page_handler };
+    static const httpd_uri_t fwd_uri    = { .uri = "/motor/forward",  .method = HTTP_GET, .handler = motor1_forward_handler };
+    static const httpd_uri_t bwd_uri    = { .uri = "/motor/backward", .method = HTTP_GET, .handler = motor1_backward_handler };
+    static const httpd_uri_t stop_uri   = { .uri = "/motor/stop",     .method = HTTP_GET, .handler = motor1_stop_handler };
+    static const httpd_uri_t status_uri = { .uri = "/motor/status",   .method = HTTP_GET, .handler = motor1_status_handler };
+
+    httpd_register_uri_handler(server, &root_uri);
+    httpd_register_uri_handler(server, &fwd_uri);
+    httpd_register_uri_handler(server, &bwd_uri);
+    httpd_register_uri_handler(server, &stop_uri);
+    httpd_register_uri_handler(server, &status_uri);
+
+    return server;
+}
+
+#endif // MOTOR1_WEB_CONTROL
+
+/*
+====================================================
 HELPER
 ====================================================
 */
@@ -323,6 +495,40 @@ static void clear_all(const PinMap *arr, int size)
     for (int i = 0; i < size; i++) {
         GPIOHandler::set(arr[i].pin, 0);
     }
+}
+
+// Configures each pin in the group as an output, driven low.
+static void init_pin_group_outputs(const PinMap *pins, int size)
+{
+    for (int i = 0; i < size; i++) {
+        GPIOHandler::initOutput(pins[i].pin);
+        GPIOHandler::set(pins[i].pin, 0);
+    }
+}
+
+// Walks the group, driving one pin high at a time (all others low),
+// logging + holding for delay_ms before moving to the next.
+static void cycle_pin_group(const char *label, const PinMap *pins, int size, int delay_ms)
+{
+    for (int i = 0; i < size; i++) {
+        clear_all(pins, size);
+        GPIOHandler::set(pins[i].pin, 1);
+        ESP_LOGI(TAG, "%s ACTIVE: %s (%d)", label, pins[i].name, pins[i].pin);
+        vTaskDelay(pdMS_TO_TICKS(delay_ms));
+    }
+}
+
+// Runs one forward/backward move cycle on a DRV8825 motor, logging each
+// phase. Used by the plain (non-web-control) DRV8825 tests.
+static void test_drv8825_cycle(DRV8825_t *motor, const char *label)
+{
+    ESP_LOGI(TAG, "%s FORWARD", label);
+    DRV8825_Move(motor, 200, DRV8825_FORWARD, 10000);
+    vTaskDelay(pdMS_TO_TICKS(2000));
+
+    ESP_LOGI(TAG, "%s Backwards", label);
+    DRV8825_Move(motor, 200, DRV8825_BACKWARD, 10000);
+    vTaskDelay(pdMS_TO_TICKS(2000));
 }
 
 /*
@@ -358,39 +564,19 @@ extern "C" void app_main(void)
     */
 
 #ifdef TEST_IO_PINS
-    int io_size = sizeof(io_pins) / sizeof(io_pins[0]);
-
-    for (int i = 0; i < io_size; i++) {
-        GPIOHandler::initOutput(io_pins[i].pin);
-        GPIOHandler::set(io_pins[i].pin, 0);
-    }
+    init_pin_group_outputs(io_pins, sizeof(io_pins) / sizeof(io_pins[0]));
 #endif
 
 #ifdef TEST_MOSFETS
-    int mos_size = sizeof(mosfet_pins) / sizeof(mosfet_pins[0]);
-
-    for (int i = 0; i < mos_size; i++) {
-        GPIOHandler::initOutput(mosfet_pins[i].pin);
-        GPIOHandler::set(mosfet_pins[i].pin, 0);
-    }
+    init_pin_group_outputs(mosfet_pins, sizeof(mosfet_pins) / sizeof(mosfet_pins[0]));
 #endif
 
 #ifdef TEST_MOTOR1
-    int m1_size = sizeof(motor1_pins) / sizeof(motor1_pins[0]);
-
-    for (int i = 0; i < m1_size; i++) {
-        GPIOHandler::initOutput(motor1_pins[i].pin);
-        GPIOHandler::set(motor1_pins[i].pin, 0);
-    }
+    init_pin_group_outputs(motor1_pins, sizeof(motor1_pins) / sizeof(motor1_pins[0]));
 #endif
 
 #ifdef TEST_MOTOR2
-    int m2_size = sizeof(motor2_pins) / sizeof(motor2_pins[0]);
-
-    for (int i = 0; i < m2_size; i++) {
-        GPIOHandler::initOutput(motor2_pins[i].pin);
-        GPIOHandler::set(motor2_pins[i].pin, 0);
-    }
+    init_pin_group_outputs(motor2_pins, sizeof(motor2_pins) / sizeof(motor2_pins[0]));
 #endif
 
 #ifdef TEST_SENSORS
@@ -416,7 +602,9 @@ extern "C" void app_main(void)
 
     DRV8825_Init(&motor1);
 
+#if !defined(MOTOR1_WEB_CONTROL)
     DRV8825_Enable(&motor1);
+#endif
 
     DRV8825_Set_Step_Mode(
         &motor1,
@@ -444,9 +632,23 @@ extern "C" void app_main(void)
 
     bool wifi_ok = wifi_test_connect();
 
+#ifndef MOTOR1_WEB_CONTROL
     if (wifi_ok) {
         wifi_test_temp_sensor_init();
         wifi_test_send_temperature();
+    }
+#endif
+
+#endif
+
+#if defined(TEST_WIFI) && defined(TEST_DRV8825_MOTOR1) && defined(MOTOR1_WEB_CONTROL)
+
+    if (wifi_ok) {
+        start_motor1_webserver();
+        xTaskCreate(motor1_control_task, "motor1_ctrl", 4096, NULL, 5, NULL);
+        ESP_LOGI(TAG, "Motor 1 web control ready - open http://<device-ip>/ in a browser");
+    } else {
+        ESP_LOGE(TAG, "Motor 1 web control skipped - WiFi not connected");
     }
 
 #endif
@@ -459,75 +661,19 @@ extern "C" void app_main(void)
     while (1) {
 
 #ifdef TEST_IO_PINS
-
-        for (int i = 0; i < io_size; i++) {
-
-            clear_all(io_pins, io_size);
-
-            GPIOHandler::set(io_pins[i].pin, 1);
-
-            ESP_LOGI(TAG,
-                     "IO ACTIVE: %s (%d)",
-                     io_pins[i].name,
-                     io_pins[i].pin);
-
-            vTaskDelay(pdMS_TO_TICKS(5000));
-        }
-
+        cycle_pin_group("IO", io_pins, sizeof(io_pins) / sizeof(io_pins[0]), 5000);
 #endif
 
 #ifdef TEST_MOSFETS
-
-        for (int i = 0; i < mos_size; i++) {
-
-            clear_all(mosfet_pins, mos_size);
-
-            GPIOHandler::set(mosfet_pins[i].pin, 1);
-
-            ESP_LOGI(TAG,
-                     "MOSFET ACTIVE: %s (%d)",
-                     mosfet_pins[i].name,
-                     mosfet_pins[i].pin);
-
-            vTaskDelay(pdMS_TO_TICKS(5000));
-        }
-
+        cycle_pin_group("MOSFET", mosfet_pins, sizeof(mosfet_pins) / sizeof(mosfet_pins[0]), 5000);
 #endif
 
 #ifdef TEST_MOTOR1
-
-        for (int i = 0; i < m1_size; i++) {
-
-            clear_all(motor1_pins, m1_size);
-
-            GPIOHandler::set(motor1_pins[i].pin, 1);
-
-            ESP_LOGI(TAG,
-                     "MOTOR1 ACTIVE: %s (%d)",
-                     motor1_pins[i].name,
-                     motor1_pins[i].pin);
-
-            vTaskDelay(pdMS_TO_TICKS(5000));
-        }
-
+        cycle_pin_group("MOTOR1", motor1_pins, sizeof(motor1_pins) / sizeof(motor1_pins[0]), 5000);
 #endif
 
 #ifdef TEST_MOTOR2
-
-        for (int i = 0; i < m2_size; i++) {
-
-            clear_all(motor2_pins, m2_size);
-
-            GPIOHandler::set(motor2_pins[i].pin, 1);
-
-            ESP_LOGI(TAG,
-                     "MOTOR2 ACTIVE: %s (%d)",
-                     motor2_pins[i].name,
-                     motor2_pins[i].pin);
-
-            vTaskDelay(pdMS_TO_TICKS(3000));
-        }
-
+        cycle_pin_group("MOTOR2", motor2_pins, sizeof(motor2_pins) / sizeof(motor2_pins[0]), 3000);
 #endif
 
 #ifdef TEST_SENSORS
@@ -547,57 +693,23 @@ extern "C" void app_main(void)
 
 #endif
 
-#ifdef TEST_DRV8825_MOTOR1
-
-        ESP_LOGI(TAG, "Motor 1 FORWARD");
-
-        DRV8825_Move(
-            &motor1,
-            200,
-            DRV8825_FORWARD,
-            10000
-        );
-
-        vTaskDelay(pdMS_TO_TICKS(2000));
-        ESP_LOGI(TAG, "Motor 1 Backwards");
-
-        DRV8825_Move(
-            &motor1,
-            200,
-            DRV8825_BACKWARD,
-            10000
-        );
-
-        vTaskDelay(pdMS_TO_TICKS(2000));
-
+#if defined(TEST_DRV8825_MOTOR1) && !defined(MOTOR1_WEB_CONTROL)
+        test_drv8825_cycle(&motor1, "Motor 1");
 #endif
 
 #ifdef TEST_DRV8825_MOTOR2
-
-        ESP_LOGI(TAG, "Motor 2 FORWARD");
-
-        DRV8825_Move(
-            &motor2,
-            200,
-            DRV8825_FORWARD,
-            10000
-        );
-
-        vTaskDelay(pdMS_TO_TICKS(2000));
-        ESP_LOGI(TAG, "Motor 2 Backwards");
-
-        DRV8825_Move(
-            &motor2,
-            200,
-            DRV8825_BACKWARD,
-            10000
-        );
-
-        vTaskDelay(pdMS_TO_TICKS(2000));
-
+        test_drv8825_cycle(&motor2, "Motor 2");
 #endif
 
 #ifdef TEST_WIFI
+#ifdef MOTOR1_WEB_CONTROL
+
+        // Nothing to do here - the HTTP server and motor1_control_task
+        // handle everything. Just yield so this task doesn't starve the
+        // idle task and trip the watchdog.
+        vTaskDelay(pdMS_TO_TICKS(1000));
+
+#else
 
         if (wifi_ok) {
             wifi_ap_record_t ap_info;
@@ -609,7 +721,8 @@ extern "C" void app_main(void)
 
         vTaskDelay(pdMS_TO_TICKS(10000));
 
-#endif
+#endif // MOTOR1_WEB_CONTROL
+#endif // TEST_WIFI
 
 #ifdef TEST_HELLO_WORLD
 
